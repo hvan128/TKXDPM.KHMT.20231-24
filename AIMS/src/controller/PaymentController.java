@@ -16,6 +16,7 @@ import java.util.Map;
  *
  * @author hieud
  */
+//Coupling
 public class PaymentController extends BaseController {
 
 
