@@ -18,6 +18,7 @@ import java.util.logging.Logger;
  *
  * @author nguyenlm
  */
+//Coupling
 public class PlaceOrderController extends BaseController {
 
     /**

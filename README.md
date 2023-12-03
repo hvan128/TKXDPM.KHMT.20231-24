@@ -1,11 +1,11 @@
-# TKXDPM.VN.20231-24
+g# TKXDPM.VN.20231-24
 
 
-| Name           | Role        |
-| :------------- | :---------- |
-| Ngô Hải Văn    | Team Leader |
-| Nguyễn Văn A   | Member      |
-| Nguyễn Văn B   | Member      |
+| Name         | Role        |
+|:-------------| :---------- |
+| Ngô Hải Văn  | Team Leader |
+| Tô Duy Tường | Member      |
+| Nguyễn Văn B | Member      |
 
 
 ## Report Content
@@ -16,6 +16,13 @@
 <br>
 <details>
 <summary>Ngô Hải Văn</summary>
+<br>
+
+<details>
+  <summary>W13: 27/11/2023~03/12/2023 </summary>
+<br>
+<details>
+<summary>Tô Duy Tường</summary>
 <br>
 
 - Assigned tasks:

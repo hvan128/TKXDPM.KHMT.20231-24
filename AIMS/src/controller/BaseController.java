@@ -12,6 +12,7 @@ import java.util.List;
  *
  * @author nguyenlm
  */
+//Coupling
 public class BaseController {
 
     /**
