@@ -13,6 +13,9 @@ import java.util.logging.Logger;
 /**
  * @author nguyenlm Contains helper functions
  */
+
+//data coupling
+
 public class Utils {
 
     public static DateFormat DATE_FORMATER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");

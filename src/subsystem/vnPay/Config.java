@@ -10,6 +10,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.*;
 import java.util.regex.Pattern;
 
+//data coupling
 /**
  * @author CTT VNPAY
  */

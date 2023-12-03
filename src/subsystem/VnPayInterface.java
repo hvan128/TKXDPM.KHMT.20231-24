@@ -12,6 +12,9 @@ import java.util.Map;
  *
  * @author hieud
  */
+
+//data coupling
+
 public interface VnPayInterface {
 
     /**

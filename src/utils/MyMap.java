@@ -13,6 +13,9 @@ import java.util.Map;
  *
  * @author hieud
  */
+
+//data coupling
+
 public class MyMap extends LinkedHashMap<String, Object> {
     private static final long serialVersionUID = 1L;
     private static int offset = 0; // to trace the current index when calling a function
