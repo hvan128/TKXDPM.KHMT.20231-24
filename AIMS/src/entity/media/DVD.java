@@ -200,10 +200,11 @@ public class DVD extends Media {
 
 
     /**
-     * Data Coupling
+     * Content Coupling
+     * change: Media --> DVD
      */
     @Override
-    public List getAllMedia() {
+    public List<Media> getAllMedia() {
         return null;
     }
 }

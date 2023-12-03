@@ -44,7 +44,7 @@ public class Cart {
     /**
      * Data Coupling
      */
-    public List getListMedia() {
+    public List<CartMedia> getListMedia() {
         return lstCartMedia;
     }
 
@@ -61,9 +61,8 @@ public class Cart {
      */
     public int getTotalMedia() {
         int total = 0;
-        for (Object obj : lstCartMedia) {
-            CartMedia cm = (CartMedia) obj;
-            total += cm.getQuantity();
+        for (CartMedia obj : lstCartMedia) {
+            total += obj.getQuantity();
         }
         return total;
     }
@@ -74,9 +73,8 @@ public class Cart {
      */
     public int calSubtotal() {
         int total = 0;
-        for (Object obj : lstCartMedia) {
-            CartMedia cm = (CartMedia) obj;
-            total += cm.getPrice() * cm.getQuantity();
+        for (CartMedia obj : lstCartMedia) {
+            total += obj.getPrice() * obj.getQuantity();
         }
         return total;
     }
@@ -87,10 +85,9 @@ public class Cart {
      */
     public void checkAvailabilityOfProduct() throws SQLException {
         boolean allAvai = true;
-        for (Object object : lstCartMedia) {
-            CartMedia cartMedia = (CartMedia) object;
-            int requiredQuantity = cartMedia.getQuantity();
-            int availQuantity = cartMedia.getMedia().getQuantity();
+        for (CartMedia object : lstCartMedia) {
+            int requiredQuantity = object.getQuantity();
+            int availQuantity = object.getMedia().getQuantity();
             if (requiredQuantity > availQuantity) allAvai = false;
         }
         if (!allAvai) throw new MediaNotAvailableException("Some media not available");

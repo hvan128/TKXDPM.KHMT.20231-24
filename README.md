@@ -1,15 +1,12 @@
 # TKXDPM.VN.20231-24
 
-
 | Name         | Role        |
-|:-------------| :---------- |
+| :----------- | :---------- |
 | Ngô Hải Văn  | Team Leader |
 | Vũ Anh Tuấn  | Member      |
 | Nguyễn Văn B | Member      |
 
-
 ## Report Content
-
 
 <details>
   <summary>W13: 27/11/2023~03/12/2023 </summary>
@@ -19,6 +16,7 @@
 <br>
 
 - Assigned tasks:
+
   - Find Coupling in Subsystem and Utils
 
 - Implementation details:
@@ -33,6 +31,7 @@
 <br>
 
 - Assigned tasks:
+
   - Đánh giá các mức độ Coupling cho từng class trong package `entity`
   - Tối ưu code theo coupling (nếu cần thiết)
   - Clean code
@@ -45,13 +44,11 @@
       - Hầu hết các hàm đều là "Data Coupling"
       - hàm `removeCartMedia` (class `Car`) và `removeOrderMedia` (class `Order`) thuộc 'Stamp Coupling':
         - Giải thích: Khi remove một đối tượng ta chỉ cần biết `id` của đối tượng đó, tuy nhiên "Stamp Coupling" trong trường hợp này được cho phép để mục đích clean code
-      - các method `getMediaById` (class `Book`, class `CD`, class `DVD`) thuộc "Content Coupling":
+      - các method `getMediaById`, `getAllMedia` (class `Book`, class `CD`, class `DVD`) thuộc "Content Coupling":
         - Giải thích: Đưa một phương thức trả lại giá trị `Media` trong một class không phải `Media`
-
+        - Sửa: sửa lại phương thưc `getAllMedia` --> `getAll` + `Class`, return list of `Media` --> list of Class tương ứng
 
 </details>
-
-
 
 </details>
 
@@ -65,6 +62,7 @@
 <br>
 
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
@@ -82,6 +80,7 @@
 <br>
 
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
