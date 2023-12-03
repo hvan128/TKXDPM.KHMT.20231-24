@@ -13,6 +13,7 @@ import java.util.regex.Pattern;
 /**
  * @author CTT VNPAY
  */
+//data coupling
 public class Config {
 
     private static final Pattern pattern = Pattern.compile("\\{\"IP\":\"(?<ip>.*)\"\\}");
@@ -21,7 +22,7 @@ public class Config {
     public static String vnp_TmnCode = "REGISOWNER";
     public static String secretKey = "REGISOWNER";
     public static String vnp_ApiUrl = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-
+    //data coupling
     public static String md5(String message) {
         String digest = null;
         try {
@@ -39,7 +40,7 @@ public class Config {
         }
         return digest;
     }
-
+    //data coupling
     public static String Sha256(String message) {
         String digest = null;
         try {
@@ -57,7 +58,7 @@ public class Config {
         }
         return digest;
     }
-
+    //data coupling
     //Util for VNPAY
     public static String hashAllFields(Map fields) {
         List fieldNames = new ArrayList(fields.keySet());
@@ -78,7 +79,7 @@ public class Config {
         }
         return hmacSHA512(secretKey, sb.toString());
     }
-
+    //data coupling
     public static String hmacSHA512(final String key, final String data) {
         try {
 
@@ -101,7 +102,7 @@ public class Config {
             return "";
         }
     }
-
+    //data coupling
     public static String getIpAddress() throws IOException {
 return "1";
     }

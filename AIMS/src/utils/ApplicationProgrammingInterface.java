@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.logging.Logger;
-
+//data coupling
 public class ApplicationProgrammingInterface {
 
     public static DateFormat DATE_FORMATER = new SimpleDateFormat("yyyyMMddHHmmss");
