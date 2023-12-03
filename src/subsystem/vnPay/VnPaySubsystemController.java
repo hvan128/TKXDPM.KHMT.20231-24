@@ -9,6 +9,8 @@ import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+//data coupling
+
 public class VnPaySubsystemController {
 
     private static final String PAY_COMMAND = "pay";
