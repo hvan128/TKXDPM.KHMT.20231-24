@@ -8,7 +8,7 @@ import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.*;
-
+//data coupling
 public class VnPaySubsystemController {
 
     private static final String PAY_COMMAND = "pay";
@@ -20,6 +20,7 @@ public class VnPaySubsystemController {
      * @param contents
      * @return PaymentTransaction
      */
+    //data coupling
     public PaymentTransaction refund(int amount, String contents) {
         return null;
     }
@@ -28,6 +29,7 @@ public class VnPaySubsystemController {
      * @param contents
      * @return PaymentTransaction
      */
+    //data coupling
     public String generatePayOrderUrl(int money, String contents) throws IOException {
 
         String vnp_Version = "2.1.0";
@@ -103,6 +105,7 @@ public class VnPaySubsystemController {
      * @param response
      * @return PaymentTransaction
      */
+    //data coupling
     public PaymentTransaction makePaymentTransaction(Map<String, String> response) throws TransactionNotDoneException, TransactionFailedException, TransactionReverseException, UnrecognizedException {
         if (response == null) {
             return null;

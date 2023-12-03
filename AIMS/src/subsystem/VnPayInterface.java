@@ -12,6 +12,7 @@ import java.util.Map;
  *
  * @author hieud
  */
+//data coupling
 public interface VnPayInterface {
 
     /**
@@ -26,6 +27,7 @@ public interface VnPayInterface {
      * @throws UnrecognizedException if responded with an unknown error code or
      *                               something goes wrong
      */
+    //data coupling
     public abstract String generatePayUrl(int amount, String contents)
             throws PaymentException, UnrecognizedException;
 
@@ -41,9 +43,10 @@ public interface VnPayInterface {
      * @throws UnrecognizedException if responded with an unknown error code or
      *                               something goes wrong
      */
+    //data coupling
     public abstract PaymentTransaction refund(int amount, String contents)
             throws PaymentException, UnrecognizedException;
-
+    //data coupling
     public PaymentTransaction
     makePaymentTransaction(Map<String, String> response);
 }

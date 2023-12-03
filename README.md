@@ -19,10 +19,12 @@
 <br>
 
 - Assigned tasks:
-  - Find Coupling in Subsystem and Utils
+  - Đánh giá các mức độ Coupling cho từng class trong package subsystem và utils
+  - Tối ưu code theo coupling (nếu cần thiết)
+  - Clean code
 
 - Implementation details:
-  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/1
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/7
   - Specific implementation details:
     - Add comment coupling range in subsystem and utils
 

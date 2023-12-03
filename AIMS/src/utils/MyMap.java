@@ -13,6 +13,7 @@ import java.util.Map;
  *
  * @author hieud
  */
+//data coupling
 public class MyMap extends LinkedHashMap<String, Object> {
     private static final long serialVersionUID = 1L;
     private static int offset = 0; // to trace the current index when calling a function
@@ -57,6 +58,7 @@ public class MyMap extends LinkedHashMap<String, Object> {
      * @throws IllegalArgumentException
      * @author hieudm
      */
+    //data coupling
     private static String getNextTerm(String str, int idx) {
         if (str == null || idx >= str.length() || str.charAt(idx) != '"') {
             throw new IllegalArgumentException("Cannot resolve the input.");
@@ -90,6 +92,7 @@ public class MyMap extends LinkedHashMap<String, Object> {
      * @throws IllegalArgumentException
      * @author hieudm
      */
+    //data coupling
     public static MyMap toMyMap(String str, int idx) throws IllegalArgumentException {
         if (str == null || str.length() < 2 || str.charAt(idx) != '{') {
             throw new IllegalArgumentException("Cannot resolve the input.");
