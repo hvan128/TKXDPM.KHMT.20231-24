@@ -37,7 +37,7 @@
   - Clean code
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/2
   - Specific implementation details:
     - Đánh giá các mức độ Coupling cho các class trong package `entity`
       - Các đánh giá xem mức độ Coupling nào sẽ được viết bên trên các hàm trong từng file implement
