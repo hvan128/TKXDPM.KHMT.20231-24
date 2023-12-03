@@ -7,6 +7,12 @@ import javafx.scene.text.FontWeight;
 /**
  * @author NTVu 20204625
  */
+
+// data couplingg
+
+
+
+
 public class Configs {
 
 
