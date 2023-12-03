@@ -4,7 +4,7 @@
 | Name           | Role        |
 | :------------- | :---------- |
 | Ngô Hải Văn    | Team Leader |
-| Nguyễn Văn A   | Member      |
+| Ong Thế Tùng   | Member      |
 | Nguyễn Văn B   | Member      |
 
 
@@ -72,19 +72,18 @@
 </details>
 
 <details>
-<summary>Team Member 2</summary>
+<summary>Ong Thế Tùng</summary>
 <br>
 
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+  - Đánh giá coupling cho Views
 
 - Implementation details:
   - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Hầu hết các hàm đều là "Data Coupling"
+    - Hàm removeCartMedia thuộc class MediaHandler thuộc 'Stamp coupling'
+      - Giải thích: vì remove Card media chỉ cần trường 'id'
 
 </details>
 
