@@ -29,22 +29,20 @@
 </details>
 
 <details>
-<summary>Team Member 2</summary>
+<summary>Ong Thế Tùng</summary>
 <br>
 
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+  - Đánh giá coupling cho Views
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/tree/feature/tung
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Hầu hết các hàm đều là "Data Coupling"
+    - Hàm removeCartMedia thuộc class MediaHandler thuộc 'Stamp coupling'
+      - Giải thích: vì remove Card media chỉ cần trường 'id'
 
 </details>
-
 
 
 </details>
@@ -72,18 +70,19 @@
 </details>
 
 <details>
-<summary>Ong Thế Tùng</summary>
+<summary>Team Member 2</summary>
 <br>
 
 - Assigned tasks:
-  - Đánh giá coupling cho Views
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
   - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
   - Specific implementation details:
-    - Hầu hết các hàm đều là "Data Coupling"
-    - Hàm removeCartMedia thuộc class MediaHandler thuộc 'Stamp coupling'
-      - Giải thích: vì remove Card media chỉ cần trường 'id'
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
