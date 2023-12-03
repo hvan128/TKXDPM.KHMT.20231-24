@@ -13,6 +13,7 @@ import java.util.logging.Logger;
 /**
  * @author nguyenlm Contains helper functions
  */
+//data coupling
 public class Utils {
 
     public static DateFormat DATE_FORMATER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -27,6 +28,7 @@ public class Utils {
      * @param className
      * @return Logger
      */
+    //data coupling
     public static Logger getLogger(String className) {
         return Logger.getLogger(className);
     }
@@ -36,6 +38,7 @@ public class Utils {
      * @param num
      * @return String
      */
+    //data coupling
     public static String getCurrencyFormat(int num) {
         Locale vietname = new Locale("vi", "VN");
         NumberFormat defaultFormat = NumberFormat.getCurrencyInstance(vietname);
@@ -48,6 +51,7 @@ public class Utils {
      * @return the current time as {@link java.lang.String String}.
      * @author hieudm
      */
+    //data coupling
     public static String getToday() {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date();
@@ -62,6 +66,7 @@ public class Utils {
      * @return cipher text as {@link java.lang.String String}.
      * @author hieudm vnpay
      */
+    //data coupling
     public static String md5(String message) {
         String digest = null;
         try {
