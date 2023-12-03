@@ -5,7 +5,7 @@ import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 
 /**
- * @author NTVu 20204625
+ 
  */
 
 // data couplingg
