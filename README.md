@@ -1,65 +1,93 @@
-# An Internet Media Store
+# TKXDPM.VN.20231-24
 
-<p align="center">
-  <img src="assets/images/aims_cover_image.png" />
-</p>
 
-## Getting Started
+| Name           | Role        |
+| :------------- | :---------- |
+| Ngô Hải Văn    | Team Leader |
+| Nguyễn Văn A   | Member      |
+| Nguyễn Văn B   | Member      |
 
-Welcome to the AIMS project. Here is a guideline to help you get started.
 
-## Folder Structure
+## Report Content
 
-The workspace contains the following folders, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-- `assets`: the folder to maintain static resources
-- `test`: the folder for testing purpose
+<details>
+  <summary>W13: 27/11/2023~03/12/2023 </summary>
+<br>
+<details>
+<summary>Ngô Hải Văn</summary>
+<br>
 
-## Dependency Management
+- Assigned tasks:
+  - Find Coupling in Subsystem and Utils
 
-### Working with Eclipse
+- Implementation details:
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/1
+  - Specific implementation details:
+    - Add comment coupling range in subsystem and utils
 
-Import the root directory of this repository after cloning under `Eclipse` -> `Open Projects from File System...` or by
-using EGit.
+</details>
 
-### SQLite
+<details>
+<summary>Team Member 2</summary>
+<br>
 
-Import `sqlite-jdbc-3.7.2.jar` in `lib`
-under `Eclipse` -> `Project` -> `Properties` -> `Java Build Path` -> `Classpath` -> `Add JARs...`.
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
 
-### JUnit
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
-Import `JUnit5` library
-under `Eclipse` -> `Project` -> `Properties` -> `Java Build Path` -> `Modulepath` -> `Add Library...` -> `JUnit` -> `Next`.
+</details>
 
-### JavaFX
 
-**Note:** At first, please try to run the project once, and then follow these steps.
 
-1. Create a new `User Library`
-   under `Eclipse` -> `Window` -> `Preferences` -> `Java` -> `Build Path` -> `User Libraries` -> `New`
-2. Name it anything you want, e.g., `JavaFX15`, and include the ***jars*** under either the `lib/linux/javafx-sdk-15`
-   directory for Linux distro or the `lib/win/javafx-sdk-15` directory for Windows in the project.
-3. Include the library, e.g., `JavaFX15`, into the classpath.
+</details>
 
-### Add VM arguments
+---
 
-Click on `Run` -> `Run Configurations...`  -> `Java Application`, create a new launch configuration for your project and
-add these VM arguments:
+<details>
+  <summary>W2: 01/10/2023~08/10/2023 </summary>
+<br>
+<details>
+<summary>Team Member 1</summary>
+<br>
 
-- For Linux distro:
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
 
-> `--module-path lib/linux/javafx-sdk-15/lib --add-modules=javafx.controls,javafx.fxml,javafx.base,javafx.web`
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
-- For Windows:
+</details>
 
-> `--module-path lib/win/javafx-sdk-15/lib --add-modules=javafx.controls,javafx.fxml,javafx.base,javafx.web`
+<details>
+<summary>Team Member 2</summary>
+<br>
 
-## Author
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
 
-- nguyenlm - Software Engeneering Student - k61
-- manhvd - Software Engeneering Student - k61
-- hieudm - ICT - k61
-- tuanva - IT1 - K65
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+</details>
+
+---
