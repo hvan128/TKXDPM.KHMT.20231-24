@@ -4,7 +4,7 @@
 | Name           | Role        |
 | :------------- | :---------- |
 | Ngô Hải Văn    | Team Leader |
-| Nguyễn Văn A   | Member      |
+| Trần Anh Tuấn   | Member      |
 | Nguyễn Văn B   | Member      |
 
 
@@ -29,7 +29,7 @@
 </details>
 
 <details>
-<summary>Team Member 2</summary>
+<summary>Trần Anh Tuấn</summary>
 <br>
 
 - Assigned tasks:
