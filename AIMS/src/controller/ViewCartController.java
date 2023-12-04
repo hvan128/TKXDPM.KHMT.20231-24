@@ -9,6 +9,7 @@ import java.sql.SQLException;
  *
  * @author nguyenlm
  */
+//Coupling
 public class ViewCartController extends BaseController {
 
     /**

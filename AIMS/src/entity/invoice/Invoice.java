@@ -17,21 +17,21 @@ public class Invoice {
 
 
     /**
-     * @return Order
+     * Data Coupling
      */
     public Order getOrder() {
         return order;
     }
 
     /**
-     * @return int
+     * Data Coupling
      */
     public int getAmount() {
         return amount;
     }
 
     /**
-     * @param amount
+     * Data Coupling
      */
     public void setAmount(int amount) {
         this.amount = amount;
