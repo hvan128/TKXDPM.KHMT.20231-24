@@ -22,15 +22,14 @@
 
 
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+  - Đánh giá các mức độ Coupling cho từng class trong package subsystem và utils
+  - Tối ưu code theo coupling (nếu cần thiết)
+  - Clean code
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/10
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Hầu hết các hàm đều là "Data Coupling"
 
 </details>
 
