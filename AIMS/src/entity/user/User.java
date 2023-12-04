@@ -18,7 +18,7 @@ public class User {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     // override toString method
     @Override
@@ -33,7 +33,7 @@ public class User {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     // getter and setter
     public String getName() {
@@ -42,7 +42,7 @@ public class User {
 
 
     /**
-     * @param name
+     * Data Coupling
      */
     public void setusername(String name) {
         this.name = name;
@@ -50,7 +50,7 @@ public class User {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getEmail() {
         return this.email;
@@ -58,7 +58,7 @@ public class User {
 
 
     /**
-     * @param email
+     * Sata Coupling
      */
     public void setEmail(String email) {
         this.email = email;
@@ -66,7 +66,7 @@ public class User {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getAddress() {
         return this.address;
@@ -74,7 +74,7 @@ public class User {
 
 
     /**
-     * @param address
+     * Data Coupling
      */
     public void setAddress(String address) {
         this.address = address;
@@ -82,7 +82,7 @@ public class User {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getPhone() {
         return this.phone;
@@ -90,7 +90,7 @@ public class User {
 
 
     /**
-     * @param phone
+     * Data Coupling
      */
     public void setPhone(String phone) {
         this.phone = phone;

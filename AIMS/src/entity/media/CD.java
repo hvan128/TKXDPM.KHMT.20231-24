@@ -27,7 +27,7 @@ public class CD extends Media {
 
 
     /**
-     * @return String
+     * Data coupling
      */
     public String getArtist() {
         return this.artist;
@@ -35,8 +35,7 @@ public class CD extends Media {
 
 
     /**
-     * @param artist
-     * @return CD
+     * Data coupling
      */
     public CD setArtist(String artist) {
         this.artist = artist;
@@ -45,7 +44,7 @@ public class CD extends Media {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getRecordLabel() {
         return this.recordLabel;
@@ -53,8 +52,7 @@ public class CD extends Media {
 
 
     /**
-     * @param recordLabel
-     * @return CD
+     * Data coupling
      */
     public CD setRecordLabel(String recordLabel) {
         this.recordLabel = recordLabel;
@@ -63,7 +61,7 @@ public class CD extends Media {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getMusicType() {
         return this.musicType;
@@ -71,8 +69,7 @@ public class CD extends Media {
 
 
     /**
-     * @param musicType
-     * @return CD
+     * Data Coupling
      */
     public CD setMusicType(String musicType) {
         this.musicType = musicType;
@@ -81,7 +78,7 @@ public class CD extends Media {
 
 
     /**
-     * @return Date
+     * Data Coupling
      */
     public Date getReleasedDate() {
         return this.releasedDate;
@@ -89,8 +86,7 @@ public class CD extends Media {
 
 
     /**
-     * @param releasedDate
-     * @return CD
+     * Data coupling
      */
     public CD setReleasedDate(Date releasedDate) {
         this.releasedDate = releasedDate;
@@ -99,7 +95,7 @@ public class CD extends Media {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     @Override
     public String toString() {
@@ -110,9 +106,7 @@ public class CD extends Media {
 
 
     /**
-     * @param id
-     * @return Media
-     * @throws SQLException
+     * Content Coupling
      */
     @Override
     public Media getMediaById(int id) throws SQLException {
@@ -147,10 +141,11 @@ public class CD extends Media {
 
 
     /**
-     * @return List
+     * Content coupling
+     * change: Media --> CD
      */
     @Override
-    public List getAllMedia() {
+    public List<Media> getAllMedia() {
         return null;
     }
 
