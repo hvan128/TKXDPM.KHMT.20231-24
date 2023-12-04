@@ -47,6 +47,8 @@
       - các method `getMediaById`, `getAllMedia` (class `Book`, class `CD`, class `DVD`) thuộc "Content Coupling":
         - Giải thích: Đưa một phương thức trả lại giá trị `Media` trong một class không phải `Media`
         - Sửa: sửa lại phương thưc `getAllMedia` --> `getAll` + `Class`, return list of `Media` --> list of Class tương ứng
+      - method `Shipment` (class `Shipment`) thuộc 'Control Coupling
+        - Giải thích: Sử dụng biến điều khiển luồng `utils.Config.RUSH_ORDER`
 
 </details>
 
