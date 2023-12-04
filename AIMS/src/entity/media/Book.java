@@ -39,6 +39,15 @@ public class Book extends Media {
     /**
      * Data Coupling
      */
+    // getter and setter
+    public int getId() {
+        return this.id;
+    }
+
+
+    /**
+     * Data Coupling
+     */
     public String getAuthor() {
         return this.author;
     }
@@ -195,11 +204,10 @@ public class Book extends Media {
 
 
     /**
-     * Content Coupling
-     * change: Media --> Book
+     * Data Coupling
      */
     @Override
-    public List<Media> getAllMedia() {
+    public List getAllMedia() {
         return null;
     }
 
