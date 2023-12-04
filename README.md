@@ -1,12 +1,16 @@
-g# TKXDPM.VN.20231-24
+# TKXDPM.VN.20231-24
 
-| Name          | Role        |
-|:--------------|:------------|
-| Ngô Hải Văn   | Team Leader |
-| Ong Thế Tùng  | Member      |
-| Vũ Anh Tuấn   | Member      |
-| Tô Duy Tường  | Member      |
-| Trần Anh Tuấn | Member      |
+
+| Name             | Role        |
+| :----------------| :---------- |
+| Ngô Hải Văn      | Team Leader |
+| Ong Thế Tùng     | Member      |
+| Vũ Anh Tuấn      | Member      |
+| Tô Duy Tường     | Member      |
+| Trần Anh Tuấn    | Member      |
+
+
+## Report Content
 
 
 <details>
@@ -16,15 +20,16 @@ g# TKXDPM.VN.20231-24
 <summary>Ngô Hải Văn</summary>
 <br>
 
+
 - Assigned tasks:
-    - Đánh giá các mức độ Coupling cho từng class trong package subsystem và utils
-    - Tối ưu code theo coupling (nếu cần thiết)
-    - Clean code
+  - Đánh giá các mức độ Coupling cho từng class trong package subsystem và utils
+  - Tối ưu code theo coupling (nếu cần thiết)
+  - Clean code
 
 - Implementation details:
-    - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/10
-    - Specific implementation details:
-        - Hầu hết các hàm đều là "Data Coupling"
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/11
+  - Specific implementation details:
+    - Hầu hết các hàm đều là "Data Coupling"
 
 </details>
 
@@ -33,15 +38,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -57,7 +62,7 @@ g# TKXDPM.VN.20231-24
 - Implementation details:
     - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/10
     - Specific implementation details:
-        - Các function đều thực hiện đúng chức năng, clear rõ ràng đạtg "Data Coupling"
+        - Các function đều thực hiện đúng chức năng, clear rõ ràng đạt "Data Coupling"
 
 </details>
 
@@ -66,15 +71,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -83,15 +88,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -108,23 +113,17 @@ g# TKXDPM.VN.20231-24
 <summary>Ngô Hải Văn</summary>
 <br>
 
-<details>
-  <summary>W13: 27/11/2023~03/12/2023 </summary>
-<br>
-<details>
-<summary>Tô Duy Tường</summary>
-<br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -133,15 +132,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -150,15 +149,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -167,15 +166,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -184,15 +183,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -209,16 +208,17 @@ g# TKXDPM.VN.20231-24
 <summary>Ngô Hải Văn</summary>
 <br>
 
+
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -227,15 +227,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -244,15 +244,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -261,15 +261,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -278,15 +278,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -303,16 +303,17 @@ g# TKXDPM.VN.20231-24
 <summary>Ngô Hải Văn</summary>
 <br>
 
+
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -321,15 +322,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -338,15 +339,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -355,15 +356,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
@@ -372,15 +373,15 @@ g# TKXDPM.VN.20231-24
 <br>
 
 - Assigned tasks:
-    - Task 1
-    - Task 2
-    - ...
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Describe specific in detail what you did last week
-        - You can attach images if you want
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
