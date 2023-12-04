@@ -9,6 +9,7 @@ import java.sql.SQLException;
  *
  * @author nguyenlm
  */
+//Functional cohesion
 public class ViewCartController extends BaseController {
 
     /**
@@ -16,6 +17,7 @@ public class ViewCartController extends BaseController {
      *
      * @throws SQLException
      */
+    //Functional cohesion
     public void checkAvailabilityOfProduct() throws SQLException {
         Cart.getCart().checkAvailabilityOfProduct();
     }
@@ -25,6 +27,7 @@ public class ViewCartController extends BaseController {
      *
      * @return subtotal
      */
+    //Functional cohesion
     public int getCartSubtotal() {
         int subtotal = Cart.getCart().calSubtotal();
         return subtotal;
