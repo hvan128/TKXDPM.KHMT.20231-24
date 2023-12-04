@@ -141,11 +141,10 @@ public class CD extends Media {
 
 
     /**
-     * Content coupling
-     * change: Media --> CD
+     * Data coupling
      */
     @Override
-    public List<Media> getAllMedia() {
+    public List getAllMedia() {
         return null;
     }
 
