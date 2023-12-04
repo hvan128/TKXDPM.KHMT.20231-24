@@ -25,6 +25,9 @@ import java.util.Arrays;
 import java.util.logging.Logger;
 
 public class MediaHandler extends FXMLScreenHandler {
+    /*
+     * Functional cohesion 
+     */
 
     private static Logger LOGGER = Utils.getLogger(MediaHandler.class.getName());
 
