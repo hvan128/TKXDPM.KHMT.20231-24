@@ -10,7 +10,8 @@ import java.util.logging.Logger;
  *
  * @author giangleee
  */
-//  Coupling
+//Coupling
+
 public class PlaceRushOrderController extends BaseController {
     /**
      * Just for logging purpose

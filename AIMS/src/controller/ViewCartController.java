@@ -9,7 +9,8 @@ import java.sql.SQLException;
  *
  * @author nguyenlm
  */
-//Functional cohesion
+//Coupling
+
 public class ViewCartController extends BaseController {
 
     /**

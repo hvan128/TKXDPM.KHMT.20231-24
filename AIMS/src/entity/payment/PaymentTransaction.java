@@ -20,7 +20,7 @@ public class PaymentTransaction {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getErrorCode() {
         return errorCode;

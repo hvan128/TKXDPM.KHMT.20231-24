@@ -20,7 +20,7 @@ public class CartMedia {
 
 
     /**
-     * @return Media
+     * Data Coupling
      */
     public Media getMedia() {
         return this.media;
@@ -28,7 +28,7 @@ public class CartMedia {
 
 
     /**
-     * @param media
+     * Data Coupling
      */
     public void setMedia(Media media) {
         this.media = media;
@@ -36,7 +36,7 @@ public class CartMedia {
 
 
     /**
-     * @return int
+     * Data Coupling
      */
     public int getQuantity() {
         return this.quantity;
@@ -44,7 +44,7 @@ public class CartMedia {
 
 
     /**
-     * @param quantity
+     * Data Coupling
      */
     public void setQuantity(int quantity) {
         this.quantity = quantity;
@@ -52,7 +52,7 @@ public class CartMedia {
 
 
     /**
-     * @return int
+     * Data Coupling
      */
     public int getPrice() {
         return this.price;
@@ -60,7 +60,7 @@ public class CartMedia {
 
 
     /**
-     * @param price
+     * Data Coupling
      */
     public void setPrice(int price) {
         this.price = price;
@@ -68,7 +68,7 @@ public class CartMedia {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     @Override
     public String toString() {

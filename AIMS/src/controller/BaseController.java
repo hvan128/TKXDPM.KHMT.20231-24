@@ -12,7 +12,8 @@ import java.util.List;
  *
  * @author nguyenlm
  */
-// Coupling
+//Coupling
+
 public class BaseController {
 
     /**
