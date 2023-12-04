@@ -46,15 +46,14 @@ public class Media {
     }
 
     /**
-     * @return boolean
+     * Data coupling
      */
     public static boolean getIsSupportedPlaceRushOrder() {
         return Media.isSupportedPlaceRushOrder;
     }
 
     /**
-     * @return int
-     * @throws SQLException
+     * Data coupling
      */
     public int getQuantity() throws SQLException {
         int updated_quantity = getMediaById(id).quantity;
@@ -63,8 +62,7 @@ public class Media {
     }
 
     /**
-     * @param quantity
-     * @return Media
+     * Data coupling
      */
     public Media setQuantity(int quantity) {
         this.quantity = quantity;
@@ -72,9 +70,7 @@ public class Media {
     }
 
     /**
-     * @param id
-     * @return Media
-     * @throws SQLException
+     * Data coupling
      */
     public Media getMediaById(int id) throws SQLException {
         String sql = "SELECT * FROM Media ;";
@@ -95,8 +91,7 @@ public class Media {
     }
 
     /**
-     * @return List
-     * @throws SQLException
+     * Data Coupling
      */
     public List getAllMedia() throws SQLException {
         Statement stm = AIMSDB.getConnection().createStatement();
@@ -117,11 +112,7 @@ public class Media {
     }
 
     /**
-     * @param tbname
-     * @param id
-     * @param field
-     * @param value
-     * @throws SQLException
+     * Data Coupling
      */
     public void updateMediaFieldById(String tbname, int id, String field, Object value) throws SQLException {
         Statement stm = AIMSDB.getConnection().createStatement();
@@ -134,7 +125,7 @@ public class Media {
     }
 
     /**
-     * @return int
+     * Data Coupling
      */
     // getter and setter
     public int getId() {
@@ -142,8 +133,7 @@ public class Media {
     }
 
     /**
-     * @param id
-     * @return Media
+     * Data Coupling
      */
     private Media setId(int id) {
         this.id = id;
@@ -151,15 +141,14 @@ public class Media {
     }
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getTitle() {
         return this.title;
     }
 
     /**
-     * @param title
-     * @return Media
+     * Data Coupling
      */
     public Media setTitle(String title) {
         this.title = title;
@@ -167,15 +156,14 @@ public class Media {
     }
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getCategory() {
         return this.category;
     }
 
     /**
-     * @param category
-     * @return Media
+     * Data Coupling
      */
     public Media setCategory(String category) {
         this.category = category;
@@ -183,15 +171,14 @@ public class Media {
     }
 
     /**
-     * @return int
+     * Data Coupling
      */
     public int getPrice() {
         return this.price;
     }
 
     /**
-     * @param price
-     * @return Media
+     * Data coupling
      */
     public Media setPrice(int price) {
         this.price = price;
@@ -199,15 +186,14 @@ public class Media {
     }
 
     /**
-     * @return String
+     * data coupling
      */
     public String getImageURL() {
         return this.imageURL;
     }
 
     /**
-     * @param url
-     * @return Media
+     * Data Coupling
      */
     public Media setMediaURL(String url) {
         this.imageURL = url;
@@ -215,15 +201,14 @@ public class Media {
     }
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getType() {
         return this.type;
     }
 
     /**
-     * @param type
-     * @return Media
+     * Data Coupling
      */
     public Media setType(String type) {
         this.type = type;
@@ -231,7 +216,7 @@ public class Media {
     }
 
     /**
-     * @return String
+     * Data Coupling
      */
     @Override
     public String toString() {
