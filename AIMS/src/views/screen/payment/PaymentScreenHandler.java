@@ -20,6 +20,9 @@ import java.util.Map;
 
 public class PaymentScreenHandler extends BaseScreenHandler {
 
+    /*
+     * Functional cohesion
+     */
     private Invoice invoice;
     @FXML
     private Label pageTitle;

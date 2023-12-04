@@ -10,7 +10,9 @@ import views.screen.BaseScreenHandler;
 import java.io.IOException;
 
 public class ResultScreenHandler extends BaseScreenHandler {
-
+    /*
+     * Functional cohesion
+     */
     private String result;
     private String message;
     @FXML

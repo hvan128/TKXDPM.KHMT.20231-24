@@ -17,7 +17,9 @@ import java.io.IOException;
 import java.util.HashMap;
 
 public class DeliveryMethodsScreenHandler extends BaseScreenHandler {
-
+    /*
+     * Functional cohesion
+     */
     private Order order;
 
     @FXML

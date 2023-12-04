@@ -38,15 +38,15 @@
 <br>
 
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+  - Đánh giá coupling cho Views
+
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/11
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Hầu hết các hàm đều là "Data Coupling"
+    - Hàm removeCartMedia thuộc class MediaHandler thuộc 'Stamp coupling'
+      - Giải thích: vì remove Card media chỉ cần trường 'id'
 
 </details>
 
@@ -55,15 +55,14 @@
 <br>
 
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+    - Đánh giá các mức độ Coupling cho từng class trong package controller
+    - Tối ưu code theo coupling (nếu cần thiết)
+    - Clean code
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-  - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+    - Specific implementation details:
+        - Các function đều thực hiện đúng chức năng, clear rõ ràng đạtg "Data Coupling"
 
 </details>
 

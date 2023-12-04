@@ -21,7 +21,9 @@ import java.util.HashMap;
 import java.util.logging.Logger;
 
 public class InvoiceScreenHandler extends BaseScreenHandler {
-
+    /*
+     * Functional cohesion
+     */
     private static Logger LOGGER = Utils.getLogger(InvoiceScreenHandler.class.getName());
 
     @FXML
