@@ -1,11 +1,13 @@
 # TKXDPM.VN.20231-24
 
 
-| Name           | Role        |
-| :------------- | :---------- |
-| Ngô Hải Văn    | Team Leader |
-| Nguyễn Văn A   | Member      |
-| Nguyễn Văn B   | Member      |
+| Name             | Role        |
+| :----------------| :---------- |
+| Ngô Hải Văn      | Team Leader |
+| Ong Thế Tùng     | Member      |
+| Vũ Anh Tuấn      | Member      |
+| Tô Duy Tường     | Member      |
+| Trần Anh Tuấn    | Member      |
 
 
 ## Report Content
@@ -18,18 +20,73 @@
 <summary>Ngô Hải Văn</summary>
 <br>
 
+
 - Assigned tasks:
-  - Find Coupling in Subsystem and Utils
+  - Task 1
+  - Task 2
+  - ...
 
 - Implementation details:
-  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/1
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
   - Specific implementation details:
-    - Add comment coupling range in subsystem and utils
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
 
 </details>
 
 <details>
-<summary>Team Member 2</summary>
+<summary>Ong Thế Tùng</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Tô Duy Tường</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Vũ Anh Tuấn</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Trần Anh Tuấn</summary>
 <br>
 
 - Assigned tasks:
@@ -52,10 +109,28 @@
 ---
 
 <details>
-  <summary>W2: 01/10/2023~08/10/2023 </summary>
+  <summary>W14: 11/12/2023~17/12/2023 </summary>
 <br>
 <details>
-<summary>Team Member 1</summary>
+<summary>Ngô Hải Văn</summary>
+<br>
+
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Ong Thế Tùng</summary>
 <br>
 
 - Assigned tasks:
@@ -72,7 +147,7 @@
 </details>
 
 <details>
-<summary>Team Member 2</summary>
+<summary>Tô Duy Tường</summary>
 <br>
 
 - Assigned tasks:
@@ -87,7 +162,235 @@
     - You can attach images if you want
 
 </details>
+
+<details>
+<summary>Vũ Anh Tuấn</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Trần Anh Tuấn</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+
 
 </details>
 
 ---
+
+<details>
+  <summary>W15: 18/12/2023~24/12/2023 </summary>
+<br>
+<details>
+<summary>Ngô Hải Văn</summary>
+<br>
+
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Ong Thế Tùng</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Tô Duy Tường</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Vũ Anh Tuấn</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Trần Anh Tuấn</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+
+
+</details>
+
+---
+
+<details>
+  <summary>W16: 25/12/2023~1/31/2023 </summary>
+<br>
+<details>
+<summary>Ngô Hải Văn</summary>
+<br>
+
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Ong Thế Tùng</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Tô Duy Tường</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Vũ Anh Tuấn</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+<details>
+<summary>Trần Anh Tuấn</summary>
+<br>
+
+- Assigned tasks:
+  - Task 1
+  - Task 2
+  - ...
+
+- Implementation details:
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Describe specific in detail what you did last week
+    - You can attach images if you want
+
+</details>
+
+
+
+</details>
+
+---
+
+
