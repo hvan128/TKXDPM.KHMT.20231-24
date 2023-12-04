@@ -1,14 +1,17 @@
 # TKXDPM.VN.20231-24
 
-| Name          | Role        |
-| :------------ | :---------- |
-| Ngô Hải Văn   | Team Leader |
-| Ong Thế Tùng  | Member      |
-| Vũ Anh Tuấn   | Member      |
-| Tô Duy Tường  | Member      |
-| Trần Anh Tuấn | Member      |
+
+| Name             | Role        |
+| :----------------| :---------- |
+| Ngô Hải Văn      | Team Leader |
+| Ong Thế Tùng     | Member      |
+| Vũ Anh Tuấn      | Member      |
+| Tô Duy Tường     | Member      |
+| Trần Anh Tuấn    | Member      |
+
 
 ## Report Content
+
 
 <details>
   <summary>W13: 27/11/2023~03/12/2023 </summary>
@@ -17,17 +20,16 @@
 <summary>Ngô Hải Văn</summary>
 <br>
 
-- Assigned tasks:
 
-  - Task 1
-  - Task 2
-  - ...
+- Assigned tasks:
+  - Đánh giá các mức độ Coupling cho từng class trong package subsystem và utils
+  - Tối ưu code theo coupling (nếu cần thiết)
+  - Clean code
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/10
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Hầu hết các hàm đều là "Data Coupling"
 
 </details>
 
@@ -36,7 +38,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -54,7 +55,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -98,7 +98,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -110,6 +109,8 @@
     - You can attach images if you want
 
 </details>
+
+
 
 </details>
 
@@ -122,8 +123,8 @@
 <summary>Ngô Hải Văn</summary>
 <br>
 
-- Assigned tasks:
 
+- Assigned tasks:
   - Task 1
   - Task 2
   - ...
@@ -141,7 +142,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -159,7 +159,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -177,7 +176,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -195,7 +193,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -207,6 +204,8 @@
     - You can attach images if you want
 
 </details>
+
+
 
 </details>
 
@@ -219,8 +218,8 @@
 <summary>Ngô Hải Văn</summary>
 <br>
 
-- Assigned tasks:
 
+- Assigned tasks:
   - Task 1
   - Task 2
   - ...
@@ -238,7 +237,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -256,7 +254,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -274,7 +271,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -292,7 +288,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -304,6 +299,8 @@
     - You can attach images if you want
 
 </details>
+
+
 
 </details>
 
@@ -316,8 +313,8 @@
 <summary>Ngô Hải Văn</summary>
 <br>
 
-- Assigned tasks:
 
+- Assigned tasks:
   - Task 1
   - Task 2
   - ...
@@ -335,7 +332,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -353,7 +349,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -371,7 +366,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -389,7 +383,6 @@
 <br>
 
 - Assigned tasks:
-
   - Task 1
   - Task 2
   - ...
@@ -402,6 +395,10 @@
 
 </details>
 
+
+
 </details>
 
 ---
+
+
