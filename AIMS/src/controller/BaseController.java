@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author nguyenlm
  */
-//Coupling
+// Coupling
 public class BaseController {
 
     /**
@@ -22,6 +22,7 @@ public class BaseController {
      * @param media media object
      * @return CartMedia or null
      */
+    //Functional cohesion
     public CartMedia checkMediaInCart(Media media) {
         return Cart.getCart().checkMediaInCart(media);
     }
@@ -31,6 +32,7 @@ public class BaseController {
      *
      * @return List[CartMedia]
      */
+    //Functional cohesion
     public List getListCartMedia() {
         return Cart.getCart().getListMedia();
     }
