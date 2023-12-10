@@ -165,7 +165,7 @@ public class Book extends Media {
 
 
     /**
-     * Content coupling
+     * Functional Cohesion
      */
     @Override
     public Media getMediaById(int id) throws SQLException {
@@ -204,7 +204,8 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * Content Coupling
+     * Coincidental Cohesion
      */
     @Override
     public List getAllMedia() {
