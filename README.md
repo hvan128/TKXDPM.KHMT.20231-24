@@ -189,15 +189,19 @@
 <br>
 
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+  - Tìm function cohesion
+  - Đánh giá mức độ cohesion cho từng class trong package utils
+  - Clean code
 
 - Implementation details:
   - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Hầu hết các hàm đều là function cohesion ở mức độ cao
+    - Ở ApplicationProgramming tính chất cohesion là khá cao vì mọi phương thức đều liên quan đến việc giao tiếp với một api
+        + Cả ba mức cohesion (functional, sequential, và communicational) đều thể hiện trong class này.
+    - Ở configs thì các phần trong class này được nhóm lại dựa trên chức năng hoặc mục đích của chúng tạo ra một mức độ cohesion cao,  chúng là các nhóm chức năng hoặc mục đích tương đối độc lập trong class.
+    - Ở MyMap, các phương thức này đều thực hiện các nhiệm vụ liên quan chặt chẽ đến việc xử lý JSON và chuyển đổi giữa các kiểu dữ liệu, tạo ra một mức độ cohesion cao trong class 
+    - Ở Utils, tất cả các phương thức này tập trung vào các chức năng cụ thể và đều thực hiện các nhiệm vụ liên quan chặt chẽ đến chủ đề cụ thể của class nên mức độ cohesion xuất hiện trong nhiều phương thức cao
 
 </details>
 
