@@ -119,6 +119,7 @@ public class ShippingScreenHandler extends BaseScreenHandler implements Initiali
     /**
      * @return PlaceOrderController
      */
+    //Functional cohesion
     public PlaceOrderController getBController() {
         return (PlaceOrderController) super.getBController();
     }

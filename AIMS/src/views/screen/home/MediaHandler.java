@@ -84,6 +84,7 @@ public class MediaHandler extends FXMLScreenHandler {
     /**
      * @return Media
      */
+    //Functional cohesion
     public Media getMedia() {
         return media;
     }
