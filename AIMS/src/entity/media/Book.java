@@ -166,6 +166,7 @@ public class Book extends Media {
 
     /**
      * Content coupling
+     *
      */
     @Override
     public Media getMediaById(int id) throws SQLException {

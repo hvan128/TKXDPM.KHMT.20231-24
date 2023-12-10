@@ -19,6 +19,7 @@ public class Cart {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public static Cart getCart() {
         if (cartInstance == null) cartInstance = new Cart();
@@ -27,6 +28,7 @@ public class Cart {
 
     /**
      *  Data Coupling
+     *  Functional Cohesion
      */
     public void addCartMedia(CartMedia cm) {
         lstCartMedia.add(cm);
@@ -35,6 +37,7 @@ public class Cart {
 
     /**
      * Stamp Coupling
+     * Functional Cohesion
      */
     public void removeCartMedia(CartMedia cm) {
         lstCartMedia.remove(cm);
@@ -43,6 +46,7 @@ public class Cart {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public List<CartMedia> getListMedia() {
         return lstCartMedia;
@@ -50,6 +54,7 @@ public class Cart {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public void emptyCart() {
         lstCartMedia.clear();
@@ -58,6 +63,7 @@ public class Cart {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public int getTotalMedia() {
         int total = 0;
@@ -70,6 +76,7 @@ public class Cart {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public int calSubtotal() {
         int total = 0;
@@ -82,6 +89,7 @@ public class Cart {
 
     /**
      * Data Coupling
+     * Procedural Cohesion
      */
     public void checkAvailabilityOfProduct() throws SQLException {
         boolean allAvai = true;
@@ -96,6 +104,7 @@ public class Cart {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public CartMedia checkMediaInCart(Media media) {
         for (CartMedia cartMedia : lstCartMedia) {
