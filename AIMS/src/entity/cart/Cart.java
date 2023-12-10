@@ -82,6 +82,7 @@ public class Cart {
 
     /**
      * Data Coupling
+     * Procedural Cohesion
      */
     public void checkAvailabilityOfProduct() throws SQLException {
         boolean allAvai = true;
