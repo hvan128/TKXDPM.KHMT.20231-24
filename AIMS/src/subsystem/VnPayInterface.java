@@ -26,6 +26,7 @@ public interface VnPayInterface {
      * @throws UnrecognizedException if responded with an unknown error code or
      *                               something goes wrong
      */
+    //Functional cohesion
     public abstract String generatePayUrl(int amount, String contents)
             throws PaymentException, UnrecognizedException;
 

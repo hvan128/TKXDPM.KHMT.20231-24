@@ -28,6 +28,7 @@ public class VnPaySubsystemController {
      * @param contents
      * @return PaymentTransaction
      */
+    //Functional cohesion
     public String generatePayOrderUrl(int money, String contents) throws IOException {
 
         String vnp_Version = "2.1.0";

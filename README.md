@@ -124,15 +124,12 @@
 
 
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+  - Determine the cohesion type for each class or method in the subsystem package
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/15
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Hầu hết các hàm đều là "Functional Cohesion"
 
 </details>
 
