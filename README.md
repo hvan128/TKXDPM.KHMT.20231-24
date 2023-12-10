@@ -176,7 +176,7 @@
   - Kiểm tra và sửa lại cái đánh giá mức độ Coupling của tuần trước
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): [https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/16]()
   - Specific implementation details:
     - Phương thức `checkAvailabilityOfProduct` (class `Cart`) thuộc `Procedural Cohesion`
       - Giải thích: phương thức này đặt vào class `Cart` do tính tuần tự của quy trình đặt hàng có bước kiểm tra số lượng sản phẩm
