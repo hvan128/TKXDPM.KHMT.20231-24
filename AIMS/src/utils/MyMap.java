@@ -13,6 +13,7 @@ import java.util.Map;
  *
  * @author hieud
  */
+
 public class MyMap extends LinkedHashMap<String, Object> {
     private static final long serialVersionUID = 1L;
     private static int offset = 0; // to trace the current index when calling a function
@@ -29,6 +30,7 @@ public class MyMap extends LinkedHashMap<String, Object> {
      * @author hieudm
      * https://stackoverflow.com/questions/52406467/convert-object-to-map-in-java
      */
+    // Function cohesion
     public static Map<String, Object> toMyMap(Object obj) throws IllegalArgumentException, IllegalAccessException {
         Map<String, Object> map = new MyMap();
         for (Field field : obj.getClass().getDeclaredFields()) {
@@ -57,6 +59,7 @@ public class MyMap extends LinkedHashMap<String, Object> {
      * @throws IllegalArgumentException
      * @author hieudm
      */
+    // Function cohesion
     private static String getNextTerm(String str, int idx) {
         if (str == null || idx >= str.length() || str.charAt(idx) != '"') {
             throw new IllegalArgumentException("Cannot resolve the input.");
@@ -90,6 +93,7 @@ public class MyMap extends LinkedHashMap<String, Object> {
      * @throws IllegalArgumentException
      * @author hieudm
      */
+    // Function cohesion
     public static MyMap toMyMap(String str, int idx) throws IllegalArgumentException {
         if (str == null || str.length() < 2 || str.charAt(idx) != '{') {
             throw new IllegalArgumentException("Cannot resolve the input.");
@@ -180,6 +184,7 @@ public class MyMap extends LinkedHashMap<String, Object> {
      * @author hieudm
      * https://hg.openjdk.java.net/jdk8/jdk8/jdk/file/tip/src/share/classes/java/util/Hashtable.java
      */
+    // Function cohesion
     public String toJSON() {
         int max = size() - 1;
         if (max == -1)

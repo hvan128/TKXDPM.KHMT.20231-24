@@ -13,6 +13,8 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 
+// Function Cohesion
+
 public class ApplicationProgrammingInterface {
 
     public static DateFormat DATE_FORMATER = new SimpleDateFormat("yyyyMMddHHmmss");
@@ -51,6 +53,7 @@ public class ApplicationProgrammingInterface {
      * @return HttpURLConnection
      * @throws IOException
      */
+    // Function Cohesion
     private static HttpURLConnection generateConnection(String url, String requestMethod, String token) throws IOException {
         final var conn = (HttpURLConnection) extracted(url).openConnection();
         conn.setDoInput(true);
@@ -71,6 +74,8 @@ public class ApplicationProgrammingInterface {
      * @return response in String type
      * @throws IOException when this exceptional condition occurs
      */
+
+    // Function Cohesion
     public static String post(String url, String data) throws IOException {
         allowMethods("PATCH");
         final String payload = data;
@@ -108,6 +113,7 @@ public class ApplicationProgrammingInterface {
     /**
      * @param methods
      */
+    // Function Cohesion 
     private static void allowMethods(String... methods) {
         try {
             Field methodsField = HttpURLConnection.class.getDeclaredField("methods");
