@@ -44,7 +44,7 @@ public class User {
     /**
      * Data Coupling
      */
-    public void setusername(String name) {
+    public void setUsername(String name) {
         this.name = name;
     }
 

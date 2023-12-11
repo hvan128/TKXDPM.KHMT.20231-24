@@ -106,7 +106,7 @@ public class CD extends Media {
 
 
     /**
-     * Content Coupling
+     * Functional Cohesion
      */
     @Override
     public Media getMediaById(int id) throws SQLException {
@@ -141,7 +141,8 @@ public class CD extends Media {
 
 
     /**
-     * Data coupling
+     * Content Coupling
+     * Coincidental Cohesion
      */
     @Override
     public List getAllMedia() {

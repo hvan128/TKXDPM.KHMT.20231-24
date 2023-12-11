@@ -169,6 +169,8 @@ public class DeliveryMethodsScreenHandler extends BaseScreenHandler {
     /**
      * @return PlaceOrderController
      */
+    //Functional cohesion
+
     public PlaceOrderController getBController() {
         return (PlaceOrderController) super.getBController();
     }
