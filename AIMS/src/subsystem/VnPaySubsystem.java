@@ -15,6 +15,9 @@ import java.util.Map;
  * @author hieud
  *
  */
+/**
+ * SOLID: Đảm bảo SOLID
+ */
 public class VnPaySubsystem implements VnPayInterface {
 
     /**
