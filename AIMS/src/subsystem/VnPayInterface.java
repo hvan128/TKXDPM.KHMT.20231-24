@@ -12,6 +12,11 @@ import java.util.Map;
  *
  * @author hieud
  */
+
+/**
+ * SOLID: Đảm bảo SOLID
+ */
+
 public interface VnPayInterface {
 
     /**
