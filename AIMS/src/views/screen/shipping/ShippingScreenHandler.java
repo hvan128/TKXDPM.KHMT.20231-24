@@ -24,6 +24,10 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
+/**
+ * SOLID: Đảm bảo SOLID
+ */
+
 public class ShippingScreenHandler extends BaseScreenHandler implements Initializable {
     /*
      * Functional cohesion

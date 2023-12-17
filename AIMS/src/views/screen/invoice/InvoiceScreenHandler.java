@@ -20,6 +20,11 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.logging.Logger;
 
+/**
+* SOLID: Đảm bảo SOLID
+*/
+
+
 public class InvoiceScreenHandler extends BaseScreenHandler {
     /*
      * Functional cohesion

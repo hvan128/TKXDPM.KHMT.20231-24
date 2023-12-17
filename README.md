@@ -240,15 +240,15 @@
 
 - Assigned tasks:
 
-  - Task 1
-  - Task 2
-  - ...
+  - Đánh giá SOLID của các class trong package views
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/22
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - SOLID
+      - Hầu hết các class đều tuân thủ tốt theo SOLID 
+      - Có thể xem xét numMediaCartLabel trong HomeScreenHandler sang Cart
+      - Một số class có trách nhiệm đơn giản và tập trung, do đó ISP không áp dụng
 
 </details>
 
