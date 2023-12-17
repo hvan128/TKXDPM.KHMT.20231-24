@@ -31,6 +31,13 @@ public class MyMap extends LinkedHashMap<String, Object> {
      * https://stackoverflow.com/questions/52406467/convert-object-to-map-in-java
      */
     // Function cohesion
+
+    /*
+     * Solid
+     * Phương thức này có trách nhiệm chuyển đổi một đối tượng Java thành một đối tượng MyMap.
+     * Nếu có thể,  có thể xem xét chia thành các phương thức nhỏ hơn để mỗi phương thức chỉ thực hiện một trách nhiệm cụ thể, 
+     * như chuyển đổi trực tiếp giá trị từ trường đối tượng hoặc xử lý trường của đối tượng.
+     */
     public static Map<String, Object> toMyMap(Object obj) throws IllegalArgumentException, IllegalAccessException {
         Map<String, Object> map = new MyMap();
         for (Field field : obj.getClass().getDeclaredFields()) {
@@ -94,6 +101,12 @@ public class MyMap extends LinkedHashMap<String, Object> {
      * @author hieudm
      */
     // Function cohesion
+
+    /*
+     * Solid
+     * Phương thức này có trách nhiệm chuyển đổi một chuỗi JSON thành một đối tượng MyMap.
+     * 
+     */
     public static MyMap toMyMap(String str, int idx) throws IllegalArgumentException {
         if (str == null || str.length() < 2 || str.charAt(idx) != '{') {
             throw new IllegalArgumentException("Cannot resolve the input.");
@@ -185,6 +198,12 @@ public class MyMap extends LinkedHashMap<String, Object> {
      * https://hg.openjdk.java.net/jdk8/jdk8/jdk/file/tip/src/share/classes/java/util/Hashtable.java
      */
     // Function cohesion
+
+    /*
+     * Solid
+     * Phương thức này có trách nhiệm chuyển đổi một đối tượng MyMap thành chuỗi JSON
+     * Có thể xem xét chia thành các phương thức nhỏ hơn để mỗi phương thức chỉ thực hiện một trách nhiệm cụ thể, như xử lý key, value hoặc xử lý các trường con của chuỗi JSON.
+     */
     public String toJSON() {
         int max = size() - 1;
         if (max == -1)
