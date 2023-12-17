@@ -16,6 +16,21 @@ import java.util.logging.Logger;
  *
  * @author nguyenlm
  */
+
+/**
+ * SOLID:
+ * Đảm bảo tốt nguyên tắc OCP: Phương thức `getMediaById` được kế thừa bởi các lớp con, dễ dang cho
+ * việc mở rộng mà không cần chỉnh sửa trong lớp này
+ *
+ * Đảm bảo nguyên tắc SRP: Việc tách lớp Media thành các lớp con Book, CD, DVD để mỗi lớp con thực hiện
+ * đúng một trách nhiệm duy nhất liên quan đến sản phẩm của mình
+ *
+ * Việc tách CartMedia, OrderMedia với Media đảm bảo SRP: mỗi lớp thực hiện 1 chức năng
+ * CartMedia chịu trách nhiệm với các sản phẩm trong Cart (chỉ thể hiện các thông tin cần thiết)
+ * Media quản lý thông tin của sản phẩm nói chung, bao gồm Book, CD, DVD
+ */
+
+
 public class Media {
 
     protected static boolean isSupportedPlaceRushOrder = new Random().nextBoolean();

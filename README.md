@@ -135,13 +135,13 @@
 <br>
 
 - Assigned tasks:
+
   - Determine the cohesion type for each class or method in views/screen
 
 - Implementation details:
   - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/16
   - Specific implementation details:
     - Hầu hết các hàm đều là "Functional Cohesion"
-
 
 </details>
 
@@ -194,6 +194,7 @@
 <br>
 
 - Assigned tasks:
+
   - Tìm function cohesion
   - Đánh giá mức độ cohesion cho từng class trong package utils
   - Clean code
@@ -203,9 +204,9 @@
   - Specific implementation details:
     - Hầu hết các hàm đều là function cohesion ở mức độ cao
     - Ở ApplicationProgramming tính chất cohesion là khá cao vì mọi phương thức đều liên quan đến việc giao tiếp với một api
-        + Cả ba mức cohesion (functional, sequential, và communicational) đều thể hiện trong class này.
-    - Ở configs thì các phần trong class này được nhóm lại dựa trên chức năng hoặc mục đích của chúng tạo ra một mức độ cohesion cao,  chúng là các nhóm chức năng hoặc mục đích tương đối độc lập trong class.
-    - Ở MyMap, các phương thức này đều thực hiện các nhiệm vụ liên quan chặt chẽ đến việc xử lý JSON và chuyển đổi giữa các kiểu dữ liệu, tạo ra một mức độ cohesion cao trong class 
+      - Cả ba mức cohesion (functional, sequential, và communicational) đều thể hiện trong class này.
+    - Ở configs thì các phần trong class này được nhóm lại dựa trên chức năng hoặc mục đích của chúng tạo ra một mức độ cohesion cao, chúng là các nhóm chức năng hoặc mục đích tương đối độc lập trong class.
+    - Ở MyMap, các phương thức này đều thực hiện các nhiệm vụ liên quan chặt chẽ đến việc xử lý JSON và chuyển đổi giữa các kiểu dữ liệu, tạo ra một mức độ cohesion cao trong class
     - Ở Utils, tất cả các phương thức này tập trung vào các chức năng cụ thể và đều thực hiện các nhiệm vụ liên quan chặt chẽ đến chủ đề cụ thể của class nên mức độ cohesion xuất hiện trong nhiều phương thức cao
 
 </details>
@@ -275,17 +276,22 @@
 
 - Assigned tasks:
 
-  - Task 1
-  - Task 2
-  - ...
+  - Đánh giá SOLID của các class trong package `enity`
+  - Chỉnh sửa đánh giá Coupling - Cohesion
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-  - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
 
-</details>
+  - Pull Request(s): [https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/20]()
+  - Specific implementation details:
+    - SOLID:
+      - Hầu hết các class đều tuân thủ tốt theo SOLID - Việc tách `CartMedia`, `OrderMedia` với `Media` đảm bảo SRP: mỗi lớp thực hiện 1 chức năng `CartMedia` chịu trách nhiệm với các sản phẩm trong `Cart` (chỉ thể hiện các thông tin cần thiết) Media quản lý thông tin của sản phẩm nói chung, bao gồm `Book`, `CD`, `DVD`.
+      - Việc tách lớp `Media` thành các lớp con `Book`, `CD`, `DVD` để mỗi lớp con thực hiện đúng một trách nhiệm duy nhất liên quan đến sản phẩm của mình.
+      - Đảm bảo tốt nguyên tắc OCP: Phương thức `getMediaById` được kế thừa bởi các lớp con, dễ dàng cho việc mở rộng mà không cần chỉnh sửa trong lớp này.
+    - Update Coupling - Cohesion:
+      - Một số class đang có Coupling và Cohesion thấp (tương tác thấp) do sử dụng hàm getter/setter cho từng thuộc tính
+      - Chỉnh sửa: Gộp hết thành một hàm getter cho class (nếu class đó không đòi hỏi phải lấy thông tin từng thuộc tính)
+
+  </details>
 
 <details>
 <summary>Trần Anh Tuấn</summary>

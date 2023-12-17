@@ -2,6 +2,11 @@ package entity.cart;
 
 import entity.media.Media;
 
+/**
+ * Update Coupling - Cohesion:
+ * Coupling và Cohesion thấp do sự dụng getter/setter cho từng thuộc tính
+ */
+
 public class CartMedia {
 
     private Media media;
