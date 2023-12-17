@@ -151,15 +151,12 @@
 
 - Assigned tasks:
 
-  - Task 1
-  - Task 2
-  - ...
+  - Determine the cohesion type for each class or method in the controller package
 
 - Implementation details:
   - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Hầu hết các hàm đều là "Functional Cohesion"
 
 </details>
 

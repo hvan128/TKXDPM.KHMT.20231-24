@@ -3,6 +3,10 @@ package controller;
 import entity.cart.Cart;
 
 import java.sql.SQLException;
+/**
+ * SOLID:
+ * Việc chia ra các hàm trong class này đã đúng về nguyên tắc SOLID
+ */
 
 /**
  * This class controls the flow of events when users view the Cart
