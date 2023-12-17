@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ee79b97-2c78-4103-bd6b-1673a9a85db5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/cart/CartMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/cart/CartMedia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/invoice/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/invoice/Invoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/media/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/media/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/payment/PaymentTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/payment/PaymentTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +64,7 @@
       <workItem from="1701070261727" duration="486000" />
       <workItem from="1701681784774" duration="67000" />
       <workItem from="1702278502142" duration="26000" />
-      <workItem from="1702817056834" duration="4333000" />
+      <workItem from="1702817056834" duration="5093000" />
     </task>
     <servers />
   </component>

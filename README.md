@@ -279,6 +279,7 @@
 - Assigned tasks:
 
   - Đánh giá SOLID của các class trong package `enity`
+  - Chỉnh sửa đánh giá Coupling - Cohesion
 
 - Implementation details:
 
