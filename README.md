@@ -283,7 +283,7 @@
 
 - Implementation details:
 
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): [https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/20]()
   - Specific implementation details:
     - SOLID:
       - Hầu hết các class đều tuân thủ tốt theo SOLID - Việc tách `CartMedia`, `OrderMedia` với `Media` đảm bảo SRP: mỗi lớp thực hiện 1 chức năng `CartMedia` chịu trách nhiệm với các sản phẩm trong `Cart` (chỉ thể hiện các thông tin cần thiết) Media quản lý thông tin của sản phẩm nói chung, bao gồm `Book`, `CD`, `DVD`.
