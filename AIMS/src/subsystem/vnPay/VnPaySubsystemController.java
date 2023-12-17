@@ -9,6 +9,9 @@ import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+/**
+ * SOLID: Đảm bảo SOLID
+ */
 public class VnPaySubsystemController {
 
     private static final String PAY_COMMAND = "pay";
@@ -103,6 +106,10 @@ public class VnPaySubsystemController {
     /**
      * @param response
      * @return PaymentTransaction
+     */
+
+    /**
+     * SOLID: Đảm bảo SOLID
      */
     public PaymentTransaction makePaymentTransaction(Map<String, String> response) throws TransactionNotDoneException, TransactionFailedException, TransactionReverseException, UnrecognizedException {
         if (response == null) {

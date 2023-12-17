@@ -163,7 +163,7 @@ public class DVD extends Media {
 
 
     /**
-     * Content Coupling
+     * Functional Cohesion
      */
     @Override
     public Media getMediaById(int id) throws SQLException {
@@ -200,7 +200,8 @@ public class DVD extends Media {
 
 
     /**
-     * Data Coupling
+     * Content Coupling
+     * Coincidental Cohesion
      */
     @Override
     public List getAllMedia() {

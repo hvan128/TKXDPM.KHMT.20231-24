@@ -72,6 +72,7 @@ public class MediaHandler extends FXMLScreenHandler {
     /**
      * @param cartMedia
      */
+    //Functional cohesion
     public void setCartMedia(CartMedia cartMedia) {
         this.cartMedia = cartMedia;
         setMediaInfo();

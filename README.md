@@ -1,17 +1,14 @@
 # TKXDPM.VN.20231-24
 
-
-| Name             | Role        |
-| :----------------| :---------- |
-| Ngô Hải Văn      | Team Leader |
-| Ong Thế Tùng     | Member      |
-| Vũ Anh Tuấn      | Member      |
-| Tô Duy Tường     | Member      |
-| Trần Anh Tuấn    | Member      |
-
+| Name          | Role        |
+| :------------ | :---------- |
+| Ngô Hải Văn   | Team Leader |
+| Ong Thế Tùng  | Member      |
+| Vũ Anh Tuấn   | Member      |
+| Tô Duy Tường  | Member      |
+| Trần Anh Tuấn | Member      |
 
 ## Report Content
-
 
 <details>
   <summary>W13: 27/11/2023~03/12/2023 </summary>
@@ -20,8 +17,8 @@
 <summary>Ngô Hải Văn</summary>
 <br>
 
-
 - Assigned tasks:
+
   - Đánh giá các mức độ Coupling cho từng class trong package subsystem và utils
   - Tối ưu code theo coupling (nếu cần thiết)
   - Clean code
@@ -38,8 +35,8 @@
 <br>
 
 - Assigned tasks:
-  - Đánh giá coupling cho Views
 
+  - Đánh giá coupling cho Views
 
 - Implementation details:
   - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/11
@@ -55,14 +52,15 @@
 <br>
 
 - Assigned tasks:
-    - Đánh giá các mức độ Coupling cho từng class trong package controller
-    - Tối ưu code theo coupling (nếu cần thiết)
-    - Clean code
+
+  - Đánh giá các mức độ Coupling cho từng class trong package controller
+  - Tối ưu code theo coupling (nếu cần thiết)
+  - Clean code
 
 - Implementation details:
-    - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-    - Specific implementation details:
-        - Các function đều thực hiện đúng chức năng, clear rõ ràng đạtg "Data Coupling"
+  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Specific implementation details:
+    - Các function đều thực hiện đúng chức năng, clear rõ ràng đạtg "Data Coupling"
 
 </details>
 
@@ -97,6 +95,7 @@
 <br>
 
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
@@ -109,8 +108,6 @@
 
 </details>
 
-
-
 </details>
 
 ---
@@ -122,8 +119,8 @@
 <summary>Ngô Hải Văn</summary>
 <br>
 
-
 - Assigned tasks:
+
   - Determine the cohesion type for each class or method in the subsystem package
 
 - Implementation details:
@@ -138,15 +135,13 @@
 <br>
 
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+
+  - Determine the cohesion type for each class or method in views/screen
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/16
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Hầu hết các hàm đều là "Functional Cohesion"
 
 </details>
 
@@ -155,6 +150,7 @@
 <br>
 
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
@@ -172,15 +168,24 @@
 <br>
 
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+
+  - Đánh giá các mức độ Cohesion cho các class trong package `entity`
+  - Kiểm tra và sửa lại cái đánh giá mức độ Coupling của tuần trước
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): [https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/16]()
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - Phương thức `checkAvailabilityOfProduct` (class `Cart`) thuộc `Procedural Cohesion`
+      - Giải thích: phương thức này đặt vào class `Cart` do tính tuần tự của quy trình đặt hàng có bước kiểm tra số lượng sản phẩm
+      - Sửa: Nên đặt trong class `Media`
+    - Phương thức `getMediaById` (class `Book`, `CD`, `DVD`) thuộc `Functional Cohesion`
+      - Giải thích: phương thức đã override từ class cha để phù hợp với lớp con, phù hợp với đặc điểm của lớp con
+    - Phương thức `getAllMedia` (class `Book`, `CD`, `DVD`) thuộc `Coincidental Cohesion` và `Content Coupling`
+      - Giải thích: phương thức này không phù hợp để đặt ở các lớp con mà phải đặt trong lớp cha
+      - Sửa: Xoá phương thức này tại các lớp con và thực hiện triển khai ở lớp cha
+    - Phương thức `updateMediaFieldById` (class `Media`) thuộc `Logical Cohesion`
+      - Giải thích: Phương thức này thoạt nhìn tưởng có liên quan đến class `Media` nhưng thực chất nhằm mục đích update giá trị của các trường sản phẩm, mỗi sản phẩm có các trường các nhau nên đặt trong class `Media` không hợp logic
+      - Sửa: xoá phương thức này tại class `Media` và triển khai tại các lớp con
 
 </details>
 
@@ -189,23 +194,22 @@
 <br>
 
 - Assigned tasks:
+
   - Tìm function cohesion
   - Đánh giá mức độ cohesion cho từng class trong package utils
   - Clean code
 
 - Implementation details:
-  - Pull Request(s): #16
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/18
   - Specific implementation details:
     - Hầu hết các hàm đều là function cohesion ở mức độ cao
     - Ở ApplicationProgramming tính chất cohesion là khá cao vì mọi phương thức đều liên quan đến việc giao tiếp với một api
-        + Cả ba mức cohesion (functional, sequential, và communicational) đều thể hiện trong class này.
-    - Ở configs thì các phần trong class này được nhóm lại dựa trên chức năng hoặc mục đích của chúng tạo ra một mức độ cohesion cao,  chúng là các nhóm chức năng hoặc mục đích tương đối độc lập trong class.
-    - Ở MyMap, các phương thức này đều thực hiện các nhiệm vụ liên quan chặt chẽ đến việc xử lý JSON và chuyển đổi giữa các kiểu dữ liệu, tạo ra một mức độ cohesion cao trong class 
+      - Cả ba mức cohesion (functional, sequential, và communicational) đều thể hiện trong class này.
+    - Ở configs thì các phần trong class này được nhóm lại dựa trên chức năng hoặc mục đích của chúng tạo ra một mức độ cohesion cao, chúng là các nhóm chức năng hoặc mục đích tương đối độc lập trong class.
+    - Ở MyMap, các phương thức này đều thực hiện các nhiệm vụ liên quan chặt chẽ đến việc xử lý JSON và chuyển đổi giữa các kiểu dữ liệu, tạo ra một mức độ cohesion cao trong class
     - Ở Utils, tất cả các phương thức này tập trung vào các chức năng cụ thể và đều thực hiện các nhiệm vụ liên quan chặt chẽ đến chủ đề cụ thể của class nên mức độ cohesion xuất hiện trong nhiều phương thức cao
 
 </details>
-
-
 
 </details>
 
@@ -218,17 +222,15 @@
 <summary>Ngô Hải Văn</summary>
 <br>
 
-
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+
+  - Đánh giá SOLID của các class trong package subsystem
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/21
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
+    - SOLID:
+      - Hầu hết các class đều tuân thủ tốt theo SOLID 
 
 </details>
 
@@ -237,6 +239,7 @@
 <br>
 
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
@@ -254,6 +257,7 @@
 <br>
 
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
@@ -271,17 +275,23 @@
 <br>
 
 - Assigned tasks:
-  - Task 1
-  - Task 2
-  - ...
+
+  - Đánh giá SOLID của các class trong package `enity`
+  - Chỉnh sửa đánh giá Coupling - Cohesion
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-  - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
 
-</details>
+  - Pull Request(s): [https://github.com/hvan128/TKXDPM.KHMT.20231-24/pull/20]()
+  - Specific implementation details:
+    - SOLID:
+      - Hầu hết các class đều tuân thủ tốt theo SOLID - Việc tách `CartMedia`, `OrderMedia` với `Media` đảm bảo SRP: mỗi lớp thực hiện 1 chức năng `CartMedia` chịu trách nhiệm với các sản phẩm trong `Cart` (chỉ thể hiện các thông tin cần thiết) Media quản lý thông tin của sản phẩm nói chung, bao gồm `Book`, `CD`, `DVD`.
+      - Việc tách lớp `Media` thành các lớp con `Book`, `CD`, `DVD` để mỗi lớp con thực hiện đúng một trách nhiệm duy nhất liên quan đến sản phẩm của mình.
+      - Đảm bảo tốt nguyên tắc OCP: Phương thức `getMediaById` được kế thừa bởi các lớp con, dễ dàng cho việc mở rộng mà không cần chỉnh sửa trong lớp này.
+    - Update Coupling - Cohesion:
+      - Một số class đang có Coupling và Cohesion thấp (tương tác thấp) do sử dụng hàm getter/setter cho từng thuộc tính
+      - Chỉnh sửa: Gộp hết thành một hàm getter cho class (nếu class đó không đòi hỏi phải lấy thông tin từng thuộc tính)
+
+  </details>
 
 <details>
 <summary>Trần Anh Tuấn</summary>
@@ -301,8 +311,6 @@
     - Ví dụ, bạn có thể tạo các lớp riêng biệt để quản lý việc tạo kết nối (ConnectionManager), gửi yêu cầu và nhận phản hồi (RequestSender), và cập nhật phương thức HTTP (HttpMethodUpdater). Bằng cách này, mỗi lớp sẽ có trách nhiệm đơn lẻ và dễ bảo trì hơn.
 </details>
 
-
-
 </details>
 
 ---
@@ -314,8 +322,8 @@
 <summary>Ngô Hải Văn</summary>
 <br>
 
-
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
@@ -333,6 +341,7 @@
 <br>
 
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
@@ -350,6 +359,7 @@
 <br>
 
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
@@ -367,6 +377,7 @@
 <br>
 
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
@@ -384,6 +395,7 @@
 <br>
 
 - Assigned tasks:
+
   - Task 1
   - Task 2
   - ...
@@ -396,10 +408,6 @@
 
 </details>
 
-
-
 </details>
 
 ---
-
-

@@ -7,6 +7,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * SOLID:
+ * Việc tách Cart và CartMedia ra thành 2 lớp đảm bảo các lớp thực hiện đúng 1 chức năng
+ */
+
 public class Cart {
 
     private static Cart cartInstance;
@@ -82,6 +88,7 @@ public class Cart {
 
     /**
      * Data Coupling
+     * Procedural Cohesion
      */
     public void checkAvailabilityOfProduct() throws SQLException {
         boolean allAvai = true;
