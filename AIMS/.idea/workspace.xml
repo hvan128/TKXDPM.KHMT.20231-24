@@ -7,10 +7,10 @@
     <list default="true" id="6ee79b97-2c78-4103-bd6b-1673a9a85db5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/cart/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/media/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/media/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/media/CD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/media/CD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/media/DVD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/media/DVD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/cart/CartMedia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/cart/CartMedia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/invoice/Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/invoice/Invoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/media/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/media/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/payment/PaymentTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/payment/PaymentTransaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/user/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,23 +38,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "tuanva",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Tuan/SoICT/20231/thiet-ke-xay-dung-phan-mem/code/aims/TKXDPM.KHMT.20231-24/AIMS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;tuanva&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Tuan/SoICT/20231/thiet-ke-xay-dung-phan-mem/code/aims/TKXDPM.KHMT.20231-24/AIMS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -68,6 +69,8 @@
       <workItem from="1701066502114" duration="438000" />
       <workItem from="1701070261727" duration="486000" />
       <workItem from="1701681784774" duration="67000" />
+      <workItem from="1702278502142" duration="26000" />
+      <workItem from="1702817056834" duration="4333000" />
     </task>
     <servers />
   </component>
