@@ -5,6 +5,10 @@ import entity.cart.CartMedia;
 import entity.media.Media;
 
 import java.util.List;
+/**
+ * SOLID:
+ * Việc chia ra các hàm trong class này đã đúng về nguyên tắc SOLID
+ */
 
 
 /**
