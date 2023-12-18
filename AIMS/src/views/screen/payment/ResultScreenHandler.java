@@ -9,6 +9,12 @@ import views.screen.BaseScreenHandler;
 
 import java.io.IOException;
 
+/**
+ * SOLID: Đảm bảo SOLID
+ * ResultScreenHandler có trách nhiệm đơn giản và tập trung, do đó ISP không áp dụng ở đây
+ */
+
+
 public class ResultScreenHandler extends BaseScreenHandler {
     /*
      * Functional cohesion

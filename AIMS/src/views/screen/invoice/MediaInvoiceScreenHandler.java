@@ -12,6 +12,10 @@ import views.screen.FXMLScreenHandler;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/**
+ * SOLID: Đảm bảo SOLID
+ */
+
 public class MediaInvoiceScreenHandler extends FXMLScreenHandler {
     /*
      * Functional cohesion

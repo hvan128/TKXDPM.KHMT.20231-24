@@ -18,6 +18,10 @@ import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * SOLID: Đảm bảo SOLID
+ */
+
 public class PaymentScreenHandler extends BaseScreenHandler {
 
     /*

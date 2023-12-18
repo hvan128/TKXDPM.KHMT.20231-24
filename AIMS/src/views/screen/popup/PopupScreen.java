@@ -13,6 +13,11 @@ import views.screen.BaseScreenHandler;
 import java.io.IOException;
 
 
+/**
+ * SOLID: Đảm bảo SOLID
+ * PopupScreen đảm bảo thực hiện 1 nhiệm vụ hiển thị popup
+ */
+
 public class PopupScreen extends BaseScreenHandler {
 
     /*
