@@ -28,6 +28,13 @@ public class Utils {
      * @return Logger
      */
     //Function cohesion
+
+    /*
+     * Solid
+     * Phương thức này chỉ thực hiện một nhiệm vụ duy nhất là trả về một đối tượng Logger. 
+     * Nó tận dụng Java Logging API để cấu hình và tạo Logger. 
+     * Điều này phản ánh SRP vì nó có trách nhiệm duy nhất là cung cấp một Logger.
+     */
     public static Logger getLogger(String className) {
         return Logger.getLogger(className);
     }
@@ -38,6 +45,12 @@ public class Utils {
      * @return String
      */
     //Function cohesion
+
+    /*
+     * Solid
+     * Phương thức này cũng chỉ thực hiện một nhiệm vụ duy nhất là định dạng một số nguyên theo định dạng tiền tệ.
+     *  Nó không thực hiện nhiều công việc khác, chỉ làm một công việc duy nhất.
+     */
     public static String getCurrencyFormat(int num) {
         Locale vietname = new Locale("vi", "VN");
         NumberFormat defaultFormat = NumberFormat.getCurrencyInstance(vietname);
@@ -51,6 +64,11 @@ public class Utils {
      * @author hieudm
      */
     //Function cohesion
+
+    /*
+     * Solid
+     * Phương thức này cũng chỉ thực hiện một nhiệm vụ duy nhất là trả về thời gian hiện tại dưới dạng chuỗi được định dạng.
+     */
     public static String getToday() {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date();
@@ -66,6 +84,11 @@ public class Utils {
      * @author hieudm vnpay
      */
     //Function cohesion
+
+    /*
+     * Solid 
+     * Phương thức này thực hiện việc mã hóa chuỗi đầu vào bằng thuật toán MD5. Nó không thực hiện nhiều nhiệm vụ khác, chỉ có trách nhiệm mã hóa.
+     */
     public static String md5(String message) {
         String digest = null;
         try {

@@ -298,17 +298,17 @@
 <br>
 
 - Assigned tasks:
-
-  - Task 1
-  - Task 2
-  - ...
+  - Tìm và đánh giá solid của các class trong package utils
+  - Code clean
+    - Chỉnh sửa Coupling-Cohesion
 
 - Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
+  - Pull Request(s): #22
   - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
-
+    - Đoạn mã trong package utils này khá đơn giản và đạt được một số nguyên tắc của SOLID, đặc biệt là Single Responsibility Principle.
+    - Tuy nhiên, mức độ tuân thủ SOLID trong đoạn mã này phụ thuộc vào yêu cầu cụ thể của dự án và cách bạn muốn tổ chức mã nguồn của mình.
+    - Bằng cách này, mỗi phương thức sẽ có trách nhiệm đơn lẻ và dễ bảo trì hơn. Tuy nhiên, việc áp dụng SOLID không chỉ là việc tách mã nguồn thành các phương thức nhỏ, mà còn là việc đảm bảo các class và module được thiết kế sao cho chúng tuân theo các nguyên tắc SOLID. Điều này có thể đòi hỏi sự tái cấu trúc và phân chia code thành các class riêng biệt nếu cần thiết.
+    - Ví dụ, bạn có thể tạo các lớp riêng biệt để quản lý việc tạo kết nối (ConnectionManager), gửi yêu cầu và nhận phản hồi (RequestSender), và cập nhật phương thức HTTP (HttpMethodUpdater). Bằng cách này, mỗi lớp sẽ có trách nhiệm đơn lẻ và dễ bảo trì hơn.
 </details>
 
 </details>

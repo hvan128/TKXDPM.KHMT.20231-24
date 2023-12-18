@@ -10,17 +10,34 @@ import javafx.scene.text.FontWeight;
 public class Configs {
 
     //Function Cohesion
+    /**
+     * Solid 
+     * các giá trị này được đặt ra để cấu hình API, có thể đặt chúng vào một lớp hoặc đối tượng riêng biệt chịu trách nhiệm về cấu hình hệ thống.
+     * 
+     */
     public static final String PROCESS_TRANSACTION_URL = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
     public static final String vnp_SecureHash = "x";
     public static final String vnp_TmnCode = "x";
     //
 
     // database Configs //Function Cohesion
+
+    /*
+     * Solid
+     * Các thông số này có thể được chuyển vào một lớp hoặc đối tượng riêng biệt chịu trách nhiệm về cấu hình cơ sở dữ liệu.
+     */
     public static final String DB_NAME = "aims";
     public static final String DB_USERNAME = System.getenv("DB_USERNAME");
     public static final String DB_PASSWORD = System.getenv("DB_PASSWORD");
     //
     // static resource //Function Cohesion
+
+    /*
+     * Solid 
+     * 
+     * Các đường dẫn này cũng có thể được quản lý bởi một lớp hoặc đối tượng riêng biệt, 
+     * chịu trách nhiệm về quản lý tất cả các đường dẫn liên quan đến giao diện người dùng.
+     */
     public static final String IMAGE_PATH = "assets/images";
     public static final String INVOICE_SCREEN_PATH = "/views/fxml/invoice.fxml";
     public static final String INVOICE_MEDIA_SCREEN_PATH = "/views/fxml/media_invoice.fxml";
@@ -36,6 +53,11 @@ public class Configs {
     public static final String POPUP_PATH = "/views/fxml/popup.fxml";
     public static final String DELIVERY_METHODS_PATH = "/views/fxml/delivery_methods_form.fxml";
     //Function Cohesion
+
+    /*
+     * Solid
+     * Các giá trị này có thể được nhóm lại thành các lớp hoặc đối tượng có trách nhiệm chung.
+     */
     public static final int PLACE_RUSH_ORDER = 1;
     public static final int PALCE_ORDER = 2;
     public static String CURRENCY = "VND";
