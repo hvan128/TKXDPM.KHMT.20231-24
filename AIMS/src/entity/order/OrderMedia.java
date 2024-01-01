@@ -16,7 +16,7 @@ public class OrderMedia {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     @Override
     public String toString() {
@@ -29,7 +29,7 @@ public class OrderMedia {
 
 
     /**
-     * Data Coupling
+     * @return Media
      */
     public Media getMedia() {
         return this.media;
@@ -37,7 +37,7 @@ public class OrderMedia {
 
 
     /**
-     * Data Coupling
+     * @param media
      */
     public void setMedia(Media media) {
         this.media = media;
@@ -45,7 +45,7 @@ public class OrderMedia {
 
 
     /**
-     * Data coupling
+     * @return int
      */
     public int getQuantity() {
         return this.quantity;
@@ -53,7 +53,7 @@ public class OrderMedia {
 
 
     /**
-     * Data Coupling
+     * @param quantity
      */
     public void setQuantity(int quantity) {
         this.quantity = quantity;
@@ -61,7 +61,7 @@ public class OrderMedia {
 
 
     /**
-     * Data Coupling
+     * @return int
      */
     public int getPrice() {
         return this.price;
@@ -69,7 +69,7 @@ public class OrderMedia {
 
 
     /**
-     * Data Coupling
+     * @param price
      */
     public void setPrice(int price) {
         this.price = price;

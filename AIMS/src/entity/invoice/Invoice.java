@@ -2,11 +2,6 @@ package entity.invoice;
 
 import entity.order.Order;
 
-/**
- * Update Coupling - Cohesion:
- * Coupling - Cohesion thấp do sử dụng getter/setter cho từng thuộc tính
- */
-
 public class Invoice {
 
     private Order order;
@@ -22,21 +17,21 @@ public class Invoice {
 
 
     /**
-     * Data Coupling
+     * @return Order
      */
     public Order getOrder() {
         return order;
     }
 
     /**
-     * Data Coupling
+     * @return int
      */
     public int getAmount() {
         return amount;
     }
 
     /**
-     * Data Coupling
+     * @param amount
      */
     public void setAmount(int amount) {
         this.amount = amount;

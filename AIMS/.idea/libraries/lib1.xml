@@ -1,16 +1,15 @@
 <component name="libraryTable">
   <library name="lib1">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/javax.ejb.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/javax.jms.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/javax.annotation.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/sqlite-jdbc-3.7.2.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/javax.resource.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/javax.transaction.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/win/javafx-sdk-15/lib/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/win/javafx-sdk-15/lib/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/win/javafx-sdk-15/lib/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/win/javafx-sdk-15/lib/src.zip!/" />
+      <root url="jar://$PROJECT_DIR$/lib/win/javafx-sdk-15/lib/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/win/javafx-sdk-15/lib/javafx.web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/win/javafx-sdk-15/lib/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/win/javafx-sdk-15/lib/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/win/javafx-sdk-15/lib/javafx.base.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

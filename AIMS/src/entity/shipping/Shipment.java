@@ -8,15 +8,38 @@ public class Shipment {
 
     private String deliveryInstruction;
 
+    public int getShipType() {
+        return shipType;
+    }
+
+    public void setShipType(int shipType) {
+        this.shipType = shipType;
+    }
+
+    public void setDeliveryInstruction(String deliveryInstruction) {
+        this.deliveryInstruction = deliveryInstruction;
+    }
+
+    public String getShipmentDetail() {
+        return shipmentDetail;
+    }
+
+    public void setShipmentDetail(String shipmentDetail) {
+        this.shipmentDetail = shipmentDetail;
+    }
+
+    public String getDeliveryTime() {
+        return deliveryTime;
+    }
+
+    public void setDeliveryTime(String deliveryTime) {
+        this.deliveryTime = deliveryTime;
+    }
+
     private String shipmentDetail;
 
     private String deliveryTime;
 
-    //constructor operation
-
-    /**
-     * Control Coupling
-     */
     public Shipment(int shipType, String deliveryInstruction, String shipmentDetail, String deliveryTime) {
         super();
         if (shipType == utils.Configs.PLACE_RUSH_ORDER) {
@@ -28,27 +51,16 @@ public class Shipment {
 
     public Shipment(int shipType) {
         super();
+        this.shipType =  shipType;
     }
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     //getter setter method
     public String getDeliveryInstruction() {
         return this.deliveryInstruction;
     }
 
-    public void validateDeliveryInfo() {
-        // TODO: implement later on
-    }
-
-
-    /**
-     *
-     */
-    public Shipment createNewShipment() throws ExecutionControl.NotImplementedException {
-        // TODO: implement later on
-        throw new ExecutionControl.NotImplementedException("abc");
-    }
 }

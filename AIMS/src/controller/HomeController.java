@@ -10,7 +10,6 @@ import java.util.List;
  *
  * @author nguyenlm
  */
-//Coupling
 public class HomeController extends BaseController {
 
     /**
@@ -19,7 +18,6 @@ public class HomeController extends BaseController {
      * @return List[Media]
      * @throws SQLException
      */
-    //Functional cohesion
     public List getAllMedia() throws SQLException {
         return new Media().getAllMedia();
     }

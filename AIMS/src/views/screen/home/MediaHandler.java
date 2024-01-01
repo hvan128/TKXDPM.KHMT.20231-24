@@ -21,9 +21,7 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 public class MediaHandler extends FXMLScreenHandler {
-    /*
-     * Functional cohesion
-     */
+
     private static Logger LOGGER = Utils.getLogger(MediaHandler.class.getName());
     @FXML
     protected ImageView mediaImage;
@@ -55,7 +53,6 @@ public class MediaHandler extends FXMLScreenHandler {
                 } else {
                     CartMedia cartMedia = new CartMedia(media, cart, spinnerChangeNumber.getValue(), media.getPrice());
                     cart.getListMedia().add(cartMedia);
-                    LOGGER.info("Added " + cartMedia.getQuantity() + " " + media.getTitle() + " to cart");
                 }
 
                 // subtract the quantity and redisplay
@@ -84,7 +81,6 @@ public class MediaHandler extends FXMLScreenHandler {
     /**
      * @return Media
      */
-    //Functional cohesion
     public Media getMedia() {
         return media;
     }

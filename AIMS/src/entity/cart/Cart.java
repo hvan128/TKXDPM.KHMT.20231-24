@@ -7,12 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
- * SOLID:
- * Việc tách Cart và CartMedia ra thành 2 lớp đảm bảo các lớp thực hiện đúng 1 chức năng
- */
-
 public class Cart {
 
     private static Cart cartInstance;
@@ -24,7 +18,7 @@ public class Cart {
     }
 
     /**
-     * Data Coupling
+     * @return Cart
      */
     public static Cart getCart() {
         if (cartInstance == null) cartInstance = new Cart();
@@ -32,7 +26,7 @@ public class Cart {
     }
 
     /**
-     *  Data Coupling
+     * @param cm
      */
     public void addCartMedia(CartMedia cm) {
         lstCartMedia.add(cm);
@@ -40,7 +34,7 @@ public class Cart {
 
 
     /**
-     * Stamp Coupling
+     * @param cm
      */
     public void removeCartMedia(CartMedia cm) {
         lstCartMedia.remove(cm);
@@ -48,53 +42,52 @@ public class Cart {
 
 
     /**
-     * Data Coupling
+     * @return List
      */
-    public List<CartMedia> getListMedia() {
+    public List getListMedia() {
         return lstCartMedia;
     }
 
-    /**
-     * Data Coupling
-     */
     public void emptyCart() {
         lstCartMedia.clear();
     }
 
 
     /**
-     * Data Coupling
+     * @return int
      */
     public int getTotalMedia() {
         int total = 0;
-        for (CartMedia obj : lstCartMedia) {
-            total += obj.getQuantity();
+        for (Object obj : lstCartMedia) {
+            CartMedia cm = (CartMedia) obj;
+            total += cm.getQuantity();
         }
         return total;
     }
 
 
     /**
-     * Data Coupling
+     * @return int
      */
     public int calSubtotal() {
         int total = 0;
-        for (CartMedia obj : lstCartMedia) {
-            total += obj.getPrice() * obj.getQuantity();
+        for (Object obj : lstCartMedia) {
+            CartMedia cm = (CartMedia) obj;
+            total += cm.getPrice() * cm.getQuantity();
         }
         return total;
     }
 
 
     /**
-     * Data Coupling
-     * Procedural Cohesion
+     * @throws SQLException
      */
     public void checkAvailabilityOfProduct() throws SQLException {
         boolean allAvai = true;
-        for (CartMedia object : lstCartMedia) {
-            int requiredQuantity = object.getQuantity();
-            int availQuantity = object.getMedia().getQuantity();
+        for (Object object : lstCartMedia) {
+            CartMedia cartMedia = (CartMedia) object;
+            int requiredQuantity = cartMedia.getQuantity();
+            int availQuantity = cartMedia.getMedia().getQuantity();
             if (requiredQuantity > availQuantity) allAvai = false;
         }
         if (!allAvai) throw new MediaNotAvailableException("Some media not available");
@@ -102,7 +95,8 @@ public class Cart {
 
 
     /**
-     * Data Coupling
+     * @param media
+     * @return CartMedia
      */
     public CartMedia checkMediaInCart(Media media) {
         for (CartMedia cartMedia : lstCartMedia) {

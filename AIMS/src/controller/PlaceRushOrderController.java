@@ -10,13 +10,10 @@ import java.util.logging.Logger;
  *
  * @author giangleee
  */
-//Coupling
-
 public class PlaceRushOrderController extends BaseController {
     /**
      * Just for logging purpose
      */
-    //Functional cohesion
     private static Logger LOGGER = utils.Utils.getLogger(PlaceRushOrderController.class.getName());
 
 
@@ -24,10 +21,9 @@ public class PlaceRushOrderController extends BaseController {
      * @param deliveryData
      * @param typeDelivery
      */
-    //Functional cohesion
-    public static void validatePlaceRushOrderData(HashMap<String, String> deliveryData, int typeDelivery) {
-        if (typeDelivery == utils.Configs.PLACE_RUSH_ORDER) {
-            Shipment shipment = new Shipment(typeDelivery, deliveryData.get("deliveryInstruction"), deliveryData.get("shipmentDetail"), deliveryData.get("deliveryTime"));
+    public static void validatePlaceRushOrderData(Shipment deliveryData) {
+        if (deliveryData.getShipType() == utils.Configs.PLACE_RUSH_ORDER) {
+           // validate
         }
     }
 }

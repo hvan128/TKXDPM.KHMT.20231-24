@@ -51,7 +51,6 @@ public class CartScreenHandler extends BaseScreenHandler {
     private Button btnPlaceOrder;
 
     public CartScreenHandler(Stage stage, String screenPath) throws IOException {
-
         super(stage, screenPath);
 
         // fix relative image path caused by fxml
@@ -66,11 +65,11 @@ public class CartScreenHandler extends BaseScreenHandler {
 
         // on mouse clicked, we start processing place order usecase
         btnPlaceOrder.setOnMouseClicked(e -> {
-            LOGGER.info("Place Order button clicked");
+
             try {
-                requestToPlaceOrder();
+                requestOrder();
             } catch (SQLException | IOException exp) {
-                LOGGER.severe("Cannot place the order, see the logs");
+
                 exp.printStackTrace();
                 throw new PlaceOrderException(Arrays.toString(exp.getStackTrace()).replaceAll(", ", "\n"));
             }
@@ -120,10 +119,10 @@ public class CartScreenHandler extends BaseScreenHandler {
      * @throws SQLException
      * @throws IOException
      */
-    public void requestToPlaceOrder() throws SQLException, IOException {
+    public void requestOrder() throws SQLException, IOException {
         try {
             // create placeOrderController and process the order
-            PlaceOrderController placeOrderController = new PlaceOrderController();
+            var placeOrderController = new PlaceOrderController();
             if (placeOrderController.getListCartMedia().size() == 0) {
                 PopupScreen.error("You don't have anything to place");
                 return;
@@ -132,7 +131,7 @@ public class CartScreenHandler extends BaseScreenHandler {
             placeOrderController.placeOrder();
 
             // display available media
-            displayCartWithMediaAvailability();
+//            displayCartWithMediaAvailability();
 
             // create order
             Order order = placeOrderController.createOrder();
@@ -165,7 +164,7 @@ public class CartScreenHandler extends BaseScreenHandler {
         int subtotal = getBController().getCartSubtotal();
         int vat = (int) ((Configs.PERCENT_VAT / 100) * subtotal);
         int amount = subtotal + vat;
-        LOGGER.info("amount" + amount);
+
 
         // update subtotal and amount of Cart
         labelSubtotal.setText(Utils.getCurrencyFormat(subtotal));

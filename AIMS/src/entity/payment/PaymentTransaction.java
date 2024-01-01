@@ -1,20 +1,23 @@
 package entity.payment;
 
-/**
- * SOLID: Đảm bảo SOLID
- */
+import entity.db.AIMSDB;
+
+import java.sql.*;
+import java.util.Date;
 
 public class PaymentTransaction {
     private String errorCode;
     private String transactionId;
     private String transactionContent;
     private int amount;
-    private String createdAt;
+    private int orderID;
+    private Date createdAt;
 
     public PaymentTransaction(String errorCode, String transactionId, String transactionContent,
-                              int amount, String createdAt) {
+                              int amount, Date createdAt) {
         super();
         this.errorCode = errorCode;
+
 
         this.transactionId = transactionId;
         this.transactionContent = transactionContent;
@@ -24,13 +27,27 @@ public class PaymentTransaction {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     public String getErrorCode() {
-        return errorCode;
+        return this.errorCode;
     }
 
     public String getTransactionContent() {
-        return transactionContent;
+        return this.transactionContent;
     }
+
+    public void save(int orderId) throws SQLException {
+        this.orderID = orderId;
+//        Statement stm = AIMSDB.getConnection().createStatement();
+        String query = "INSERT INTO 'Transaction' ( orderID, createAt, content) VALUES ( ?, ?, ?)";
+        try (PreparedStatement preparedStatement = AIMSDB.getConnection().prepareStatement(query)) {
+            preparedStatement.setInt(1, this.orderID);
+            preparedStatement.setDate(2, new java.sql.Date(this.createdAt.getTime()));
+            preparedStatement.setString(3, this.transactionContent);
+
+            preparedStatement.executeUpdate();
+        }
+    }
+
 }

@@ -37,7 +37,7 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @return int
      */
     // getter and setter
     public int getId() {
@@ -46,7 +46,7 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     public String getAuthor() {
         return this.author;
@@ -54,7 +54,8 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @param author
+     * @return Book
      */
     public Book setAuthor(String author) {
         this.author = author;
@@ -63,7 +64,7 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     public String getCoverType() {
         return this.coverType;
@@ -71,7 +72,8 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @param coverType
+     * @return Book
      */
     public Book setCoverType(String coverType) {
         this.coverType = coverType;
@@ -80,7 +82,7 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     public String getPublisher() {
         return this.publisher;
@@ -88,7 +90,8 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @param publisher
+     * @return Book
      */
     public Book setPublisher(String publisher) {
         this.publisher = publisher;
@@ -97,7 +100,7 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @return Date
      */
     public Date getPublishDate() {
         return this.publishDate;
@@ -105,7 +108,8 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @param publishDate
+     * @return Book
      */
     public Book setPublishDate(Date publishDate) {
         this.publishDate = publishDate;
@@ -114,7 +118,7 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @return int
      */
     public int getNumOfPages() {
         return this.numOfPages;
@@ -122,7 +126,8 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @param numOfPages
+     * @return Book
      */
     public Book setNumOfPages(int numOfPages) {
         this.numOfPages = numOfPages;
@@ -131,7 +136,7 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     public String getLanguage() {
         return this.language;
@@ -139,7 +144,8 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @param language
+     * @return Book
      */
     public Book setLanguage(String language) {
         this.language = language;
@@ -148,7 +154,7 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     public String getBookCategory() {
         return this.bookCategory;
@@ -156,7 +162,8 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @param bookCategory
+     * @return Book
      */
     public Book setBookCategory(String bookCategory) {
         this.bookCategory = bookCategory;
@@ -165,7 +172,9 @@ public class Book extends Media {
 
 
     /**
-     * Functional Cohesion
+     * @param id
+     * @return Media
+     * @throws SQLException
      */
     @Override
     public Media getMediaById(int id) throws SQLException {
@@ -204,8 +213,7 @@ public class Book extends Media {
 
 
     /**
-     * Content Coupling
-     * Coincidental Cohesion
+     * @return List
      */
     @Override
     public List getAllMedia() {
@@ -214,7 +222,7 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     @Override
     public String toString() {

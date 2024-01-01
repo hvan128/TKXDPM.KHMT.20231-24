@@ -6,6 +6,7 @@ import entity.payment.PaymentTransaction;
 import java.io.IOException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -13,6 +14,8 @@ public class VnPaySubsystemController {
 
     private static final String PAY_COMMAND = "pay";
     private static final String VERSION = "2.1.0";
+
+//  private static VnPayService vnPayService = new VnPayService();
 
 
     /**
@@ -23,12 +26,44 @@ public class VnPaySubsystemController {
     public PaymentTransaction refund(int amount, String contents) {
         return null;
     }
+
+
+//  /**
+//   * @param data
+//   * @return String
+//   */
+//  private String generateData(Map<String, Object> data) {
+//    return ((MyMap) data).toJSON();
+//  }
+
+//  public static String convertToQueryString(Map<String, Object> paramMap) throws UnsupportedEncodingException {
+//    StringBuilder queryString = new StringBuilder();
+//
+//    for (Map.Entry<String, Object> entry : paramMap.entrySet()) {
+//      String key = entry.getKey();
+//      Object value = entry.getValue();
+//
+//      // Kiểm tra nếu giá trị là null
+//      if (value != null) {
+//        // Chuyển đổi giá trị thành chuỗi
+//        String encodedValue = URLEncoder.encode(value.toString(), "UTF-8");
+//
+//        // Thêm vào chuỗi tham số truy vấn
+//        if (queryString.length() > 0) {
+//          queryString.append("&");
+//        }
+//        queryString.append(key).append("=").append(encodedValue);
+//      }
+//    }
+//
+//    return queryString.toString();
+//  }
+
     /**
      * @param money
      * @param contents
      * @return PaymentTransaction
      */
-    //Functional cohesion
     public String generatePayOrderUrl(int money, String contents) throws IOException {
 
         String vnp_Version = "2.1.0";
@@ -104,7 +139,7 @@ public class VnPaySubsystemController {
      * @param response
      * @return PaymentTransaction
      */
-    public PaymentTransaction makePaymentTransaction(Map<String, String> response) throws TransactionNotDoneException, TransactionFailedException, TransactionReverseException, UnrecognizedException {
+    public PaymentTransaction makePaymentTransaction(Map<String, String> response) throws TransactionNotDoneException, TransactionFailedException, TransactionReverseException, UnrecognizedException, ParseException {
         if (response == null) {
             return null;
         }
@@ -115,31 +150,36 @@ public class VnPaySubsystemController {
         String transactionContent = response.get("vnp_OrderInfo");
         int amount = Integer.parseInt((String) response.get("vnp_Amount")) / 100;
         String createdAt = response.get("vnp_PayDate");
-        PaymentTransaction trans = new
-                PaymentTransaction(errorCode, transactionId, transactionContent, amount, createdAt);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 
-        switch (trans.getErrorCode()) {
-            case "00":
-                break;
-            case "01":
-                throw new TransactionNotDoneException();
-            case "02":
-                throw new TransactionFailedException();
-            case "04":
-                throw new TransactionReverseException();
-            case "05":
-                throw new ProcessingException();
-            case "09":
-                throw new RejectedTransactionException();
-            case "06":
-                throw new SendToBankException();
-            case "07":
-                throw new AnonymousTransactionException();
-            default:
-                throw new UnrecognizedException();
-        }
+            Date date = dateFormat.parse(createdAt);
+            PaymentTransaction trans = new
+                PaymentTransaction(errorCode, transactionId, transactionContent, amount, date);
+            switch (trans.getErrorCode()) {
+                case "00":
+                    break;
+                case "01":
+                    throw new TransactionNotDoneException();
+                case "02":
+                    throw new TransactionFailedException();
+                case "04":
+                    throw new TransactionReverseException();
+                case "05":
+                    throw new ProcessingException();
+                case "09":
+                    throw new RejectedTransactionException();
+                case "06":
+                    throw new SendToBankException();
+                case "07":
+                    throw new AnonymousTransactionException();
+                default:
+                    throw new UnrecognizedException();
+            }
 
-        return trans;
+            return trans;
+
+
+
     }
 
 }

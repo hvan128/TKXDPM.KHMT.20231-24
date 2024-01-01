@@ -20,19 +20,23 @@ import java.util.Map;
 
 public class PaymentScreenHandler extends BaseScreenHandler {
 
-    /*
-     * Functional cohesion
-     */
     private Invoice invoice;
     @FXML
     private Label pageTitle;
     @FXML
     private VBox vBox;
-    
-    public PaymentScreenHandler(Stage stage, String screenPath, Invoice invoice, String paymentUrl) throws IOException {
+
+
+    public PaymentScreenHandler(Stage stage, String screenPath, Invoice invoice) throws IOException {
         super(stage, screenPath);
         this.invoice = invoice;
 
+        displayWebView();
+
+    }
+    private void displayWebView(){
+        var paymentController = new PaymentController();
+        var paymentUrl = paymentController.getUrlPay(invoice.getAmount(), "Thanh toan hoa don AIMS");
         WebView paymentView = new WebView();
         WebEngine webEngine = paymentView.getEngine();
         webEngine.load(paymentUrl);
@@ -59,6 +63,9 @@ public class PaymentScreenHandler extends BaseScreenHandler {
         return params;
     }
 
+    /**
+     * @param newValue url vnPay return về
+     */
     private void handleUrlChanged(String newValue) {
         if (newValue.contains(Config.vnp_ReturnUrl)) {
             try {
@@ -68,7 +75,7 @@ public class PaymentScreenHandler extends BaseScreenHandler {
                 // Chuyển đổi query thành Map
                 Map<String, String> params = parseQueryString(query);
 
-                confirmToPayOrder(params);
+                payOrder(params);
 
             } catch (URISyntaxException e) {
                 e.printStackTrace();
@@ -79,12 +86,13 @@ public class PaymentScreenHandler extends BaseScreenHandler {
     }
 
     /**
+     * @param res kết quả vnPay trả về
      * @throws IOException
      */
-    void confirmToPayOrder(Map<String, String> res) throws IOException {
+    void payOrder(Map<String, String> res) throws IOException {
 
-        var ctrl = new PaymentController();
-        Map<String, String> response = ctrl.makePayment(res);
+        var ctrl = (PaymentController) super.getBController();
+        Map<String, String> response = ctrl.makePayment(res, this.invoice.getOrder().getId());
 
         BaseScreenHandler resultScreen = new ResultScreenHandler(this.stage, Configs.RESULT_SCREEN_PATH,
                 response.get("RESULT"), response.get("MESSAGE"));

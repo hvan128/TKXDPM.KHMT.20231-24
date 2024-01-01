@@ -13,18 +13,11 @@ import java.util.HashMap;
 import java.util.Random;
 import java.util.logging.Logger;
 
-/**
- * This class controls the flow of place order usecase in our AIMS project
- *
- * @author nguyenlm
- */
-//Coupling
 public class PlaceOrderController extends BaseController {
 
     /**
      * Just for logging purpose
      */
-    //Functional cohesion
     private static Logger LOGGER = utils.Utils.getLogger(PlaceOrderController.class.getName());
 
     /**
@@ -33,7 +26,6 @@ public class PlaceOrderController extends BaseController {
      *
      * @throws SQLException
      */
-    //Functional cohesion
     public void placeOrder() throws SQLException {
         Cart.getCart().checkAvailabilityOfProduct();
     }
@@ -63,6 +55,8 @@ public class PlaceOrderController extends BaseController {
      * @return Invoice
      */
     public Invoice createInvoice(Order order) {
+
+        order.createOrderEntity();
         return new Invoice(order);
     }
 
@@ -73,10 +67,7 @@ public class PlaceOrderController extends BaseController {
      * @throws InterruptedException
      * @throws IOException
      */
-    //Functional cohesion
     public void processDeliveryInfo(HashMap info) throws InterruptedException, IOException {
-        LOGGER.info("Process Delivery Info");
-        LOGGER.info(info.toString());
         validateDeliveryInfo(info);
     }
 
@@ -96,16 +87,13 @@ public class PlaceOrderController extends BaseController {
      * @param phoneNumber
      * @return boolean
      */
-    //Functional cohesion
     public boolean validatePhoneNumber(String phoneNumber) {
-        // check the phoneNumber has 10 digits
         if (phoneNumber.length() != 10)
             return false;
         if (Character.compare(phoneNumber.charAt(0), '0') != 0)
             return false;
-        // check the phoneNumber contains only number
         try {
-            Integer.parseInt(phoneNumber);
+            Long.parseUnsignedLong(phoneNumber);
         } catch (NumberFormatException e) {
             return false;
         }
@@ -113,8 +101,12 @@ public class PlaceOrderController extends BaseController {
         return true;
     }
 
-    //Functional cohesion
-    public boolean validateName(String name) {
+
+    /**
+     * @param name
+     * @return boolean
+     */
+    public boolean validateContainLetterAndNoEmpty(String name) {
         // Check name is not null
         if (name == null)
             return false;
@@ -126,49 +118,56 @@ public class PlaceOrderController extends BaseController {
             return false;
         return true;
     }
-    //Functional cohesion
-    public boolean validateAddress(String address) {
-        // Check address is not null
-        if (address == null)
-            return false;
-        // Check if contain leter space only
-        if (address.trim().length() == 0)
-            return false;
-        // Check if contain only leter and space
-        if (address.matches("^[a-zA-Z ]*$") == false)
-            return false;
-        return true;
-    }
 
-    //Functional cohesion
-    public int calculateShippingFee(Order order) {
+
+    /**
+     * This method calculates the shipping fees of order
+     *
+     * @param order
+     * @return shippingFee
+     */
+    public int calculateShippingFee(int amount) {
         Random rand = new Random();
-        int fees = (int) (((rand.nextFloat() * 10) / 100) * order.getAmount());
-        LOGGER.info("Order Amount: " + order.getAmount() + " -- Shipping Fees: " + fees);
+        int fees = (int) (((rand.nextFloat() * 10) / 100) * amount);
         return fees;
     }
 
-    //Functional cohesion
+    /**
+     * This method get product available place rush order media
+     *
+     * @param order
+     * @return media
+     * @throws SQLException
+     */
     public Media getProductAvailablePlaceRush(Order order) throws SQLException {
         Media media = new Media();
-        HashMap<String, String> deliveryInfo = order.getDeliveryInfo();
-        validateAddressPlaceRushOrder(deliveryInfo.get("province"), deliveryInfo.get("address"));
-        for (Object object : order.getlstOrderMedia()) {
+        for (OrderMedia pd : order.getlstOrderMedia()) {
             // CartMedia cartMedia = (CartMedia) object;
-            validateMediaPlaceRushorder();
+            if( validateMediaPlaceRushorder()){
+                media = pd.getMedia();
+            }
         }
         return media;
     }
-    //Functional cohesion
+
+
+    /**
+     * @param province
+     * @param address
+     * @return boolean
+     */
     public boolean validateAddressPlaceRushOrder(String province, String address) {
-        if (!validateAddress(address))
+        if (!validateContainLetterAndNoEmpty(address))
             return false;
         if (!province.equals("Hà Nội"))
             return false;
         return true;
     }
 
-    //Functional cohesion
+
+    /**
+     * @return boolean
+     */
     public boolean validateMediaPlaceRushorder() {
         if (Media.getIsSupportedPlaceRushOrder())
             return true;

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ee79b97-2c78-4103-bd6b-1673a9a85db5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-    </list>
+    <list default="true" id="b2d00b38-8092-4ddd-979a-871bda4591eb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,60 +13,118 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="develop" />
+        <entry key="$PROJECT_DIR$/../.." value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2YQkxEhrfhFrKqcfdXt55YdGkwz" />
+  <component name="ProjectId" id="2ZIuYnbrOaG3k16Ebzs2vUmXEyQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;tuanva&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Tuan/SoICT/20231/thiet-ke-xay-dung-phan-mem/code/aims/TKXDPM.KHMT.20231-24/AIMS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.notifications&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "implementation/hotfix",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Tuan/SoICT/20231/thiet-ke-xay-dung-phan-mem/code/aims/TKXDPM.KHMT.20231-24/AIMS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Tuan\SoICT\20231\thiet-ke-xay-dung-phan-mem\case-study\aims-project\Implementation\Programming\assets\db" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="Programming" />
+      <option name="VM_PARAMETERS" value="--module-path lib/win/javafx-sdk-15/lib --add-modules=javafx.controls,javafx.fxml,javafx.base,javafx.web" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6ee79b97-2c78-4103-bd6b-1673a9a85db5" name="Changes" comment="" />
-      <created>1700465435259</created>
+      <changelist id="b2d00b38-8092-4ddd-979a-871bda4591eb" name="Changes" comment="" />
+      <created>1702121964624</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1700465435259</updated>
-      <workItem from="1700465438843" duration="29000" />
-      <workItem from="1700709983355" duration="5000" />
-      <workItem from="1701066502114" duration="438000" />
-      <workItem from="1701070261727" duration="486000" />
-      <workItem from="1701681784774" duration="67000" />
-      <workItem from="1702278502142" duration="26000" />
-      <workItem from="1702817056834" duration="5093000" />
+      <updated>1702121964624</updated>
+      <workItem from="1702121965668" duration="134000" />
+      <workItem from="1702122102265" duration="15000" />
+      <workItem from="1702122127570" duration="547000" />
+      <workItem from="1702123073946" duration="956000" />
+      <workItem from="1702124156663" duration="185000" />
+      <workItem from="1702125990073" duration="9000" />
+      <workItem from="1702214453606" duration="25000" />
+      <workItem from="1702214953519" duration="277000" />
+      <workItem from="1702215461670" duration="66000" />
+      <workItem from="1702215540730" duration="808000" />
+      <workItem from="1702278530775" duration="719000" />
+      <workItem from="1702280259620" duration="794000" />
+      <workItem from="1702285054375" duration="1389000" />
+      <workItem from="1702292614390" duration="5348000" />
+      <workItem from="1702648090006" duration="569000" />
+      <workItem from="1702648714703" duration="1436000" />
+      <workItem from="1702810730434" duration="185000" />
+      <workItem from="1702816927813" duration="18000" />
+      <workItem from="1702817036518" duration="19000" />
+      <workItem from="1704128058655" duration="13000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
   </component>
 </project>

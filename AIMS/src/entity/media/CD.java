@@ -27,7 +27,7 @@ public class CD extends Media {
 
 
     /**
-     * Data coupling
+     * @return String
      */
     public String getArtist() {
         return this.artist;
@@ -35,7 +35,8 @@ public class CD extends Media {
 
 
     /**
-     * Data coupling
+     * @param artist
+     * @return CD
      */
     public CD setArtist(String artist) {
         this.artist = artist;
@@ -44,7 +45,7 @@ public class CD extends Media {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     public String getRecordLabel() {
         return this.recordLabel;
@@ -52,7 +53,8 @@ public class CD extends Media {
 
 
     /**
-     * Data coupling
+     * @param recordLabel
+     * @return CD
      */
     public CD setRecordLabel(String recordLabel) {
         this.recordLabel = recordLabel;
@@ -61,7 +63,7 @@ public class CD extends Media {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     public String getMusicType() {
         return this.musicType;
@@ -69,7 +71,8 @@ public class CD extends Media {
 
 
     /**
-     * Data Coupling
+     * @param musicType
+     * @return CD
      */
     public CD setMusicType(String musicType) {
         this.musicType = musicType;
@@ -78,7 +81,7 @@ public class CD extends Media {
 
 
     /**
-     * Data Coupling
+     * @return Date
      */
     public Date getReleasedDate() {
         return this.releasedDate;
@@ -86,7 +89,8 @@ public class CD extends Media {
 
 
     /**
-     * Data coupling
+     * @param releasedDate
+     * @return CD
      */
     public CD setReleasedDate(Date releasedDate) {
         this.releasedDate = releasedDate;
@@ -95,7 +99,7 @@ public class CD extends Media {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     @Override
     public String toString() {
@@ -106,7 +110,9 @@ public class CD extends Media {
 
 
     /**
-     * Functional Cohesion
+     * @param id
+     * @return Media
+     * @throws SQLException
      */
     @Override
     public Media getMediaById(int id) throws SQLException {
@@ -141,8 +147,7 @@ public class CD extends Media {
 
 
     /**
-     * Content Coupling
-     * Coincidental Cohesion
+     * @return List
      */
     @Override
     public List getAllMedia() {

@@ -33,9 +33,7 @@ import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
 public class HomeScreenHandler extends BaseScreenHandler implements Initializable {
-    /*
-     * Functional cohesion
-     */
+
     public static Logger LOGGER = Utils.getLogger(HomeScreenHandler.class.getName());
 
     @FXML

@@ -33,7 +33,7 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @return String
      */
     public String getDiscType() {
         return this.discType;
@@ -41,7 +41,8 @@ public class DVD extends Media {
 
 
     /**
-     * Data Coupling
+     * @param discType
+     * @return DVD
      */
     public DVD setDiscType(String discType) {
         this.discType = discType;
@@ -50,7 +51,7 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @return String
      */
     public String getDirector() {
         return this.director;
@@ -58,7 +59,8 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @param director
+     * @return DVD
      */
     public DVD setDirector(String director) {
         this.director = director;
@@ -67,7 +69,7 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @return int
      */
     public int getRuntime() {
         return this.runtime;
@@ -75,7 +77,8 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @param runtime
+     * @return DVD
      */
     public DVD setRuntime(int runtime) {
         this.runtime = runtime;
@@ -84,7 +87,7 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @return String
      */
     public String getStudio() {
         return this.studio;
@@ -92,7 +95,8 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @param studio
+     * @return DVD
      */
     public DVD setStudio(String studio) {
         this.studio = studio;
@@ -101,7 +105,7 @@ public class DVD extends Media {
 
 
     /**
-     *  Data coupling
+     * @return String
      */
     public String getSubtitles() {
         return this.subtitles;
@@ -109,7 +113,8 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @param subtitles
+     * @return DVD
      */
     public DVD setSubtitles(String subtitles) {
         this.subtitles = subtitles;
@@ -118,7 +123,7 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @return Date
      */
     public Date getReleasedDate() {
         return this.releasedDate;
@@ -126,7 +131,8 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @param releasedDate
+     * @return DVD
      */
     public DVD setReleasedDate(Date releasedDate) {
         this.releasedDate = releasedDate;
@@ -135,7 +141,7 @@ public class DVD extends Media {
 
 
     /**
-     * Data Coupling
+     * @return String
      */
     public String getFilmType() {
         return this.filmType;
@@ -143,7 +149,8 @@ public class DVD extends Media {
 
 
     /**
-     * Data coupling
+     * @param filmType
+     * @return DVD
      */
     public DVD setFilmType(String filmType) {
         this.filmType = filmType;
@@ -163,7 +170,9 @@ public class DVD extends Media {
 
 
     /**
-     * Functional Cohesion
+     * @param id
+     * @return Media
+     * @throws SQLException
      */
     @Override
     public Media getMediaById(int id) throws SQLException {
@@ -200,8 +209,7 @@ public class DVD extends Media {
 
 
     /**
-     * Content Coupling
-     * Coincidental Cohesion
+     * @return List
      */
     @Override
     public List getAllMedia() {
