@@ -9,6 +9,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import utils.Configs;
 import views.screen.home.HomeScreenHandler;
+import views.screen.management.ManagementScreenHandler;
 
 import java.io.IOException;
 
@@ -39,13 +40,13 @@ public class App extends Application {
             primaryStage.show();
 
             // Load splash screen with fade in effect
-            FadeTransition fadeIn = new FadeTransition(Duration.seconds(2), root);
+            FadeTransition fadeIn = new FadeTransition(Duration.seconds(0.2), root);
             fadeIn.setFromValue(0);
             fadeIn.setToValue(1);
             fadeIn.setCycleCount(1);
 
             // Finish splash with fade out effect
-            FadeTransition fadeOut = new FadeTransition(Duration.seconds(1), root);
+            FadeTransition fadeOut = new FadeTransition(Duration.seconds(0.2), root);
             fadeOut.setFromValue(1);
             fadeOut.setToValue(0);
             fadeOut.setCycleCount(1);

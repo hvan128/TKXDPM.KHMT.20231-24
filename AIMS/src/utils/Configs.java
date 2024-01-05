@@ -4,9 +4,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
 
-/**
- * @author NTVu 20204625
- */
 public class Configs {
 
 
@@ -33,6 +30,14 @@ public class Configs {
     public static final String HOME_MEDIA_PATH = "/views/fxml/media_home.fxml";
     public static final String POPUP_PATH = "/views/fxml/popup.fxml";
     public static final String DELIVERY_METHODS_PATH = "/views/fxml/delivery_methods_form.fxml";
+
+    public static final String MANAGEMENT_PATH = "/views/fxml/management.fxml";
+
+    public static final String MEDIA_MANAGEMENT_PATH = "views/fxml/media_management.fxml";
+
+    public static final String BOOK_FORM_SCREEN_PATH = "/views/fxml/book_form.fxml";
+    public static final String DVD_FORM_SCREEN_PATH = "/views/fxml/dvd_form.fxml";
+    public static final String CD_FORM_SCREEN_PATH = "/views/fxml/cd_form.fxml";
     public static final int PLACE_RUSH_ORDER = 1;
     public static final int PALCE_ORDER = 2;
     public static String CURRENCY = "VND";

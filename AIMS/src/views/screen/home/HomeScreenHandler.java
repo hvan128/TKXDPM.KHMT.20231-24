@@ -2,6 +2,7 @@ package views.screen.home;
 
 import common.exception.ViewCartException;
 import controller.HomeController;
+import controller.ManagementController;
 import controller.ViewCartController;
 import entity.cart.Cart;
 import entity.media.Media;
@@ -21,6 +22,7 @@ import utils.Configs;
 import utils.Utils;
 import views.screen.BaseScreenHandler;
 import views.screen.cart.CartScreenHandler;
+import views.screen.management.ManagementScreenHandler;
 
 import java.io.File;
 import java.io.IOException;
@@ -59,6 +61,9 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
 
     @FXML
     private SplitMenuButton splitMenuBtnSearch;
+
+    @FXML
+    private ImageView managerImage;
 
     private List homeItems;
 
@@ -122,6 +127,18 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
                 throw new ViewCartException(Arrays.toString(e1.getStackTrace()).replaceAll(", ", "\n"));
             }
         });
+
+        managerImage.setOnMouseClicked(e -> {
+            ManagementScreenHandler managementScreenHandler;
+            try {
+                LOGGER.info("User clicked to media management");
+                managementScreenHandler = new ManagementScreenHandler(this.stage, Configs.MANAGEMENT_PATH);
+                managementScreenHandler.openMediaManage();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
+
         addMediaHome(this.homeItems);
         addMenuItem(0, "Book", splitMenuBtnSearch);
         addMenuItem(1, "DVD", splitMenuBtnSearch);
@@ -137,6 +154,11 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
         File file2 = new File(Configs.IMAGE_PATH + "/" + "cart.png");
         Image img2 = new Image(file2.toURI().toString());
         cartImage.setImage(img2);
+
+        File file3 = new File(Configs.IMAGE_PATH + "/media_manager.png");
+        Image img3 = new Image(file3.toURI().toString());
+        managerImage.setImage(img3);
+
     }
 
     /**
