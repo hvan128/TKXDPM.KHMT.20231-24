@@ -5,12 +5,10 @@ import controller.HomeController;
 import controller.ViewCartController;
 import entity.cart.Cart;
 import entity.media.Media;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.SplitMenuButton;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
@@ -28,9 +26,14 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
+
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 
 /**
  * SOLID: Đảm bảo SOLID
@@ -68,6 +71,12 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
     @FXML
     private SplitMenuButton splitMenuBtnSearch;
 
+    @FXML 
+    private TextField inputMenuSearch;
+
+    @FXML
+    private SplitMenuButton splitMenuBtnSortPrice;
+
     private List homeItems;
 
     /**
@@ -98,6 +107,9 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
         numMediaInCart.setText(String.valueOf(Cart.getCart().getListMedia().size()) + " media");
         super.show();
     }
+
+    private String currentSearchKeyword = "";
+    private String currentSearchType = "";
 
     /**
      * @param arg0
@@ -135,6 +147,15 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
                 throw new ViewCartException(Arrays.toString(e1.getStackTrace()).replaceAll(", ", "\n"));
             }
         });
+
+        inputMenuSearch.textProperty().addListener((observable, oldValue, newValue) -> {
+            filterMedia(newValue, currentSearchType, false, "id");
+        });
+        
+        splitMenuBtnSortPrice.getItems().get(0).setOnAction(e -> filterMedia(currentSearchKeyword, currentSearchType, true, "price"));
+        splitMenuBtnSortPrice.getItems().get(1).setOnAction(e -> filterMedia(currentSearchKeyword, currentSearchType, false, "price"));
+        splitMenuBtnSortPrice.getItems().get(2).setOnAction(e -> filterMedia(currentSearchKeyword, currentSearchType, false, "id"));
+
         addMediaHome(this.homeItems);
         addMenuItem(0, "Book", splitMenuBtnSearch);
         addMenuItem(1, "DVD", splitMenuBtnSearch);
@@ -181,6 +202,7 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
      * @param menuButton
      */
     private void addMenuItem(int position, String text, MenuButton menuButton) {
+        inputMenuSearch.setText("");
         MenuItem menuItem = new MenuItem();
         Label label = new Label();
         label.prefWidthProperty().bind(menuButton.widthProperty().subtract(31));
@@ -189,6 +211,7 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
         menuItem.setGraphic(label);
         menuItem.setOnAction(e -> {
             // empty home media
+            LOGGER.info("Add menu item: " + text);
             hboxMedia.getChildren().forEach(node -> {
                 VBox vBox = (VBox) node;
                 vBox.getChildren().clear();
@@ -209,4 +232,49 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
         menuButton.getItems().add(position, menuItem);
     }
 
+    /**
+     * @param keyword
+     * @param typeSearch
+     * @param boolean
+     * @param searchBy
+     */
+
+    private void filterMedia(String keyword, String typeSearch, boolean desc, String searchBy) {
+        currentSearchKeyword = keyword;
+        currentSearchType = typeSearch;
+
+        List<MediaHandler> filteredItems = getFilteredMedia(keyword, typeSearch);
+
+        switch (searchBy) {
+            case "price":
+                filteredItems.sort(Comparator.comparingDouble(mediaHandler -> mediaHandler.getMedia().getPrice()));
+                break;
+            case "id":
+                filteredItems.sort(Comparator.comparingInt(mediaHandler -> mediaHandler.getMedia().getId()));
+                break;
+        }
+
+        if (desc) {
+            Collections.reverse(filteredItems);
+        }
+
+        addMediaHome(filteredItems);
+    }
+
+    private List<MediaHandler> getFilteredMedia(String keyword, String typeSearch) {
+        List<MediaHandler> filteredItems = new ArrayList<>();
+
+        homeItems.forEach(me -> {
+            MediaHandler media = (MediaHandler) me;
+
+            boolean matchesKeyword = media.getMedia().getTitle().toLowerCase().contains(keyword.toLowerCase());
+            boolean matchesType = typeSearch.isEmpty() || media.getMedia().getType().toLowerCase().equals(typeSearch.toLowerCase());
+
+            if (matchesKeyword && matchesType) {
+                filteredItems.add(media);
+            }
+        });
+
+        return filteredItems;
+    }
 }
