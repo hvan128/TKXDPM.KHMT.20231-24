@@ -21,6 +21,7 @@ import utils.Configs;
 import utils.Utils;
 import views.screen.BaseScreenHandler;
 import views.screen.cart.CartScreenHandler;
+import views.screen.login.LoginScreenHandler;
 
 import java.io.File;
 import java.io.IOException;
@@ -109,8 +110,18 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
         }
 
         aimsImage.setOnMouseClicked(e -> {
-            addMediaHome(this.homeItems);
+//            addMediaHome(this.homeItems);
+//            System.out.print("Ckicked aims");
+        	LoginScreenHandler loginScreen;
+        	try {
+                LOGGER.info("User clicked to login");
+                loginScreen = new LoginScreenHandler(this.stage, Configs.LOGIN_SCREEN_PATH);
+                loginScreen.setHomeScreenHandler(this);
+            } catch (IOException  e1) {
+                throw new ViewCartException(Arrays.toString(e1.getStackTrace()).replaceAll(", ", "\n"));
+            }
         });
+
 
         cartImage.setOnMouseClicked(e -> {
             CartScreenHandler cartScreen;

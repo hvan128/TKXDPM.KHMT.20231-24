@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="lib2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/AIMS/lib/javax.resource.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AIMS/lib/javax.servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AIMS/lib/javax.jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AIMS/lib/javax.transaction.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AIMS/lib/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AIMS/lib/javax.servlet.jsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AIMS/lib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AIMS/lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AIMS/lib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/AIMS/lib/sqlite-jdbc-3.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
