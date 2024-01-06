@@ -1,7 +1,6 @@
 ## WebKit Open Source Project: WebKit v609.1
 
 ### WebKit Notice
-
 ```
 
 You are receiving a copy of WebKit in either source or
@@ -28,7 +27,6 @@ code is here:
 ```
 
 ### LGPL 2.1
-
 ```
 
                   GNU LESSER GENERAL PUBLIC LICENSE

@@ -3,26 +3,35 @@ package dto;
 public class OrderDto {
 
     private int id;
+    private String email;
     private String address;
     private String phone;
     private int userID;
     private int shippingFee;
     private String status;
+    private String rushShippingTime;
     private String province;
-    private String name;
-
+    private String shippingInstruction;
+    private String rushShippingInstruction;
+    private int isRushShipping;
 
     // Constructors, getters, and setters
 
-    public OrderDto(int id, String address, String phone, int shippingFee,
-                    String status, String province, String name) {
+    public OrderDto(int id, String email, String address, String phone, int userID, int shippingFee,
+                    String status, String rushShippingTime, String province, String shippingInstruction,
+                    String rushShippingInstruction, int isRushShipping) {
         this.id = id;
+        this.email = email;
         this.address = address;
         this.phone = phone;
+        this.userID = userID;
         this.shippingFee = shippingFee;
         this.status = status;
+        this.rushShippingTime = rushShippingTime;
         this.province = province;
-        this.name = name;
+        this.shippingInstruction = shippingInstruction;
+        this.rushShippingInstruction = rushShippingInstruction;
+        this.isRushShipping = isRushShipping;
     }
 
     public int getId() {
@@ -33,6 +42,13 @@ public class OrderDto {
         this.id = id;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public String getAddress() {
         return address;
@@ -74,6 +90,14 @@ public class OrderDto {
         this.status = status;
     }
 
+    public String getRushShippingTime() {
+        return rushShippingTime;
+    }
+
+    public void setRushShippingTime(String rushShippingTime) {
+        this.rushShippingTime = rushShippingTime;
+    }
+
     public String getProvince() {
         return province;
     }
@@ -82,13 +106,27 @@ public class OrderDto {
         this.province = province;
     }
 
-
-    public String getName() {
-        return name;
+    public String getShippingInstruction() {
+        return shippingInstruction;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setShippingInstruction(String shippingInstruction) {
+        this.shippingInstruction = shippingInstruction;
     }
 
+    public String getRushShippingInstruction() {
+        return rushShippingInstruction;
+    }
+
+    public void setRushShippingInstruction(String rushShippingInstruction) {
+        this.rushShippingInstruction = rushShippingInstruction;
+    }
+
+    public int getIsRushShipping() {
+        return isRushShipping;
+    }
+
+    public void setIsRushShipping(int isRushShipping) {
+        this.isRushShipping = isRushShipping;
+    }
 }

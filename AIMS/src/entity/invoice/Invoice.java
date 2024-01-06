@@ -3,6 +3,7 @@ package entity.invoice;
 import entity.cart.CartMedia;
 import entity.media.Media;
 import entity.order.OrderMedia;
+import entity.payment.PaymentTransaction;
 import utils.Configs;
 
 import java.util.ArrayList;
@@ -17,6 +18,7 @@ public class Invoice {
     private int shippingFees;
     private int totalProductIncludeVAT;
     private int totalProductNoVAT;
+    private PaymentTransaction paymentTransaction;
     
     public Invoice(List<Media> listOrderMedia){
         ArrayList<OrderMedia> tmpList = new ArrayList<>();
@@ -87,7 +89,8 @@ public class Invoice {
         int count = 0;
         for(Object object : listOrderMedia){
             OrderMedia om = (OrderMedia) object;
-            count++;
+            System.out.println(om.getMedia().isSupportRushShipping());
+            if(om.getMedia().isSupportRushShipping()) count++;
         }
         return count;
     }
@@ -97,7 +100,7 @@ public class Invoice {
         int max = 0;
         for(Object object : listOrderMedia){
             OrderMedia om = (OrderMedia) object;
-            max = 200;
+            if(om.getMedia().getWeight() > max) max = om.getMedia().getWeight();
         }
         return max;
     }

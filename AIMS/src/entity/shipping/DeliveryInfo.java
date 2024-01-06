@@ -17,6 +17,7 @@ public class DeliveryInfo {
 //   private boolean isNormalShipping;
 
     public DeliveryInfo(){
+        email = "";
         name = "";
         phoneNumber = "";
         province = "";
@@ -29,6 +30,9 @@ public class DeliveryInfo {
 
     public String getEmail() {
         return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
     }
     public String getName() {
         return name;

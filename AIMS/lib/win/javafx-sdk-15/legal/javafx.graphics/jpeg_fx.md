@@ -1,7 +1,6 @@
 ## Independent JPEG Group (IJG) JPEG v9d
 
 ### IJG License
-
 ```
 
 /*

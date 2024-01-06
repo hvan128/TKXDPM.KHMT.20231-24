@@ -1,5 +1,6 @@
 package entity.order;
 
+import common.exception.AimsException;
 import dto.OrderDto;
 import entity.db.AIMSDB;
 import entity.invoice.Invoice;
@@ -22,11 +23,18 @@ public class Order {
     public Order(OrderDto orderDto) {
         this.id = orderDto.getId();
         this.deliveryInfo = new DeliveryInfo();
+        this.deliveryInfo.setEmail(orderDto.getEmail());
         this.deliveryInfo.setShippingAddress(orderDto.getAddress());
         this.deliveryInfo.setPhoneNumber(orderDto.getPhone());
         this.setStatus(orderDto.getStatus());
         this.deliveryInfo.setProvince(orderDto.getProvince());
-        this.deliveryInfo.setName("hai van");
+        this.deliveryInfo.setRushShippingInstruction(orderDto.getRushShippingInstruction());
+        this.deliveryInfo.setShippingInstruction(orderDto.getShippingInstruction());
+        if (orderDto.getIsRushShipping() == 0) {
+            this.getDeliveryInfo().setRushShipping(false);
+        } else {
+            this.getDeliveryInfo().setRushShipping(true);
+        }
     }
 
     public Order(DeliveryInfo deliveryInfo, Invoice invoice) {
@@ -101,17 +109,23 @@ public class Order {
     }
 
     public static void saveNewOrder(Order order) throws SQLException {
-        String sqlStatement = "INSERT INTO `Order` ( address, phone, shipping_fee, status, province, name) "
-                + "VALUES (?, ?, ?, ?, ?, ?)";
+        String sqlStatement = "INSERT INTO `Order` (email, address, phone, userID, shipping_fee, status, province, rush_shipping_time, shipping_instruction, rush_shipping_instruction, is_rush_shipping) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         Connection connection = AIMSDB.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(sqlStatement);
 
+        preparedStatement.setString(1, order.getDeliveryInfo().getEmail());
         preparedStatement.setString(2, order.getDeliveryInfo().getShippingAddress());
         preparedStatement.setString(3, order.getDeliveryInfo().getPhoneNumber());
+        preparedStatement.setInt(4, 1);
         preparedStatement.setDouble(5, order.calculateShippingFees());
         preparedStatement.setString(6, "CHỜ DUYỆT");
-        preparedStatement.setString(7, "hai van");
+        preparedStatement.setString(7, order.getDeliveryInfo().getProvince());
+        preparedStatement.setString(8, order.getDeliveryInfo().getRushShippingTime());
+        preparedStatement.setString(9, order.getDeliveryInfo().getShippingInstruction());
+        preparedStatement.setString(10, order.getDeliveryInfo().getRushShippingInstruction());
+        preparedStatement.setInt(11, order.getDeliveryInfo().isRushShipping() ? 1 : 0);
 
         int rowsAffected = preparedStatement.executeUpdate();
 
@@ -135,12 +149,17 @@ public class Order {
         while (resultSet.next()) {
             OrderDto newOrderDto = new OrderDto(
                     resultSet.getInt("id"),
+                    resultSet.getString("email"),
                     resultSet.getString("address"),
                     resultSet.getString("phone"),
+                    resultSet.getInt("userID"),
                     resultSet.getInt("shipping_fee"),
                     resultSet.getString("status"),
+                    resultSet.getString("rush_shipping_time"),
                     resultSet.getString("province"),
-                    resultSet.getString("name"),
+                    resultSet.getString("shipping_instruction"),
+                    resultSet.getString("rush_shipping_instruction"),
+                    resultSet.getInt("is_rush_shipping"));
 
             Order order = new Order(newOrderDto);
             orders.add(order);
