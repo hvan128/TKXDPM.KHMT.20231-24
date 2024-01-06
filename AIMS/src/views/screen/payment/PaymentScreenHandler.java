@@ -20,12 +20,15 @@ import java.util.Map;
 
 public class PaymentScreenHandler extends BaseScreenHandler {
 
+    /*
+     * Functional cohesion
+     */
     private Invoice invoice;
     @FXML
     private Label pageTitle;
     @FXML
     private VBox vBox;
-
+    
     public PaymentScreenHandler(Stage stage, String screenPath, Invoice invoice, String paymentUrl) throws IOException {
         super(stage, screenPath);
         this.invoice = invoice;

@@ -1,5 +1,9 @@
 package entity.payment;
 
+/**
+ * SOLID: Đảm bảo SOLID
+ */
+
 public class PaymentTransaction {
     private String errorCode;
     private String transactionId;
@@ -20,7 +24,7 @@ public class PaymentTransaction {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getErrorCode() {
         return errorCode;

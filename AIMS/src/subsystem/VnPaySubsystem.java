@@ -35,6 +35,7 @@ public class VnPaySubsystem implements VnPayInterface {
      * @see VnPayInterface#payOrder(entity.payment.CreditCard, int,
      * java.lang.String)
      */
+    //Functional cohesion
     public String generatePayUrl(int amount, String contents) {
 
         try {
@@ -48,11 +49,12 @@ public class VnPaySubsystem implements VnPayInterface {
      * @see VnPayInterface#refund(entity.payment.CreditCard, int,
      * java.lang.String)
      */
+    //Functional cohesion
     public PaymentTransaction refund(int amount, String contents) {
         PaymentTransaction transaction = ctrl.refund(amount, contents);
         return transaction;
     }
-
+    //Functional cohesion
     public PaymentTransaction makePaymentTransaction(Map<String, String> response) {
         return ctrl.makePaymentTransaction(response);
     }

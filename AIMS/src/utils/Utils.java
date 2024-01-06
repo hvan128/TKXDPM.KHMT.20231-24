@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 public class Utils {
 
     public static DateFormat DATE_FORMATER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-    private static Logger LOGGER = getLogger(Utils.class.getName());
+    private static Logger LOGGER = getLogger(Utils.class.getName()); 
 
     static {
         System.setProperty("java.util.logging.SimpleFormatter.format", "[%4$-4s] [%1$tF %1$tT] [%2$-7s] %5$s %n");
@@ -27,6 +27,7 @@ public class Utils {
      * @param className
      * @return Logger
      */
+    //Function cohesion
     public static Logger getLogger(String className) {
         return Logger.getLogger(className);
     }
@@ -36,6 +37,7 @@ public class Utils {
      * @param num
      * @return String
      */
+    //Function cohesion
     public static String getCurrencyFormat(int num) {
         Locale vietname = new Locale("vi", "VN");
         NumberFormat defaultFormat = NumberFormat.getCurrencyInstance(vietname);
@@ -48,6 +50,7 @@ public class Utils {
      * @return the current time as {@link java.lang.String String}.
      * @author hieudm
      */
+    //Function cohesion
     public static String getToday() {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = new Date();
@@ -62,6 +65,7 @@ public class Utils {
      * @return cipher text as {@link java.lang.String String}.
      * @author hieudm vnpay
      */
+    //Function cohesion
     public static String md5(String message) {
         String digest = null;
         try {

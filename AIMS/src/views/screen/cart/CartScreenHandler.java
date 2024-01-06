@@ -51,6 +51,7 @@ public class CartScreenHandler extends BaseScreenHandler {
     private Button btnPlaceOrder;
 
     public CartScreenHandler(Stage stage, String screenPath) throws IOException {
+
         super(stage, screenPath);
 
         // fix relative image path caused by fxml

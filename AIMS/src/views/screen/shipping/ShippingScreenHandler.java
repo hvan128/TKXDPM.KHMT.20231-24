@@ -25,7 +25,9 @@ import java.util.HashMap;
 import java.util.ResourceBundle;
 
 public class ShippingScreenHandler extends BaseScreenHandler implements Initializable {
-
+    /*
+     * Functional cohesion
+     */
     @FXML
     private Label screenTitle;
 
@@ -117,6 +119,7 @@ public class ShippingScreenHandler extends BaseScreenHandler implements Initiali
     /**
      * @return PlaceOrderController
      */
+    //Functional cohesion
     public PlaceOrderController getBController() {
         return (PlaceOrderController) super.getBController();
     }

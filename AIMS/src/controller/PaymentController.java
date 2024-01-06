@@ -16,59 +16,13 @@ import java.util.Map;
  *
  * @author hieud
  */
+//Coupling
 public class PaymentController extends BaseController {
 
 
-    /**
-     * Represent the Interbank subsystem
-     */
+    // Function Coupling
     private VnPayInterface vnPayService;
-
-    /**
-     * Validate the input date which should be in the format "mm/yy", and then
-     * return a {@link java.lang.String String} representing the date in the
-     * required format "mmyy" .
-     *
-     * @param date - the {@link java.lang.String String} represents the input date
-     * @return {@link java.lang.String String} - date representation of the required
-     * format
-     * @throws TransactionNotDoneException - if the string does not represent a valid date
-     *                                     in the expected format
-     */
-//  private String getExpirationDate(String date) throws TransactionNotDoneException {
-//    String[] strs = date.split("/");
-//    if (strs.length != 2) {
-//      throw new TransactionNotDoneException();
-//    }
-//
-//    String expirationDate = null;
-//    int month = -1;
-//    int year = -1;
-//
-//    try {
-//      month = Integer.parseInt(strs[0]);
-//      year = Integer.parseInt(strs[1]);
-//      if (month < 1 || month > 12 || year < Calendar.getInstance().get(Calendar.YEAR) % 100 || year > 100) {
-//        throw new TransactionNotDoneException();
-//      }
-//      expirationDate = strs[0] + strs[1];
-//
-//    } catch (Exception ex) {
-//      throw new TransactionNotDoneException();
-//    }
-//
-//    return expirationDate;
-//  }
-//
-//  /**
-//   * Pay order, and then return the result with a message.
-//   *
-//   * @param amount         - the amount to pay
-//   * @param contents       - the transaction contents
-//
-//   * @return {@link java.util.Map Map} represent the payment result with a
-//   *         message.
-//   */
+    //Functional cohesion
     public Map<String, String> makePayment(Map<String, String> res) {
         Map<String, String> result = new Hashtable<String, String>();
 
@@ -87,7 +41,7 @@ public class PaymentController extends BaseController {
         }
         return result;
     }
-
+    //Functional cohesion
     public void emptyCart() {
         Cart.getCart().emptyCart();
     }

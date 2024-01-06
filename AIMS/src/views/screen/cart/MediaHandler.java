@@ -25,6 +25,9 @@ import java.util.Arrays;
 import java.util.logging.Logger;
 
 public class MediaHandler extends FXMLScreenHandler {
+    /*
+     * Functional cohesion 
+     */
 
     private static Logger LOGGER = Utils.getLogger(MediaHandler.class.getName());
 
@@ -69,6 +72,7 @@ public class MediaHandler extends FXMLScreenHandler {
     /**
      * @param cartMedia
      */
+    //Functional cohesion
     public void setCartMedia(CartMedia cartMedia) {
         this.cartMedia = cartMedia;
         setMediaInfo();
@@ -88,6 +92,9 @@ public class MediaHandler extends FXMLScreenHandler {
         btnDelete.setFont(Configs.REGULAR_FONT);
         btnDelete.setOnMouseClicked(e -> {
             try {
+                /**
+                * Stamp Coupling
+                */
                 Cart.getCart().removeCartMedia(cartMedia); // update user cart
                 cartScreen.updateCart(); // re-display user cart
                 LOGGER.info("Deleted " + cartMedia.getMedia().getTitle() + " from the cart");

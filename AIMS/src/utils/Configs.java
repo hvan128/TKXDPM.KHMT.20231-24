@@ -9,21 +9,23 @@ import javafx.scene.text.FontWeight;
  */
 public class Configs {
 
-
+    //Function Cohesion
     public static final String PROCESS_TRANSACTION_URL = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
     public static final String vnp_SecureHash = "x";
     public static final String vnp_TmnCode = "x";
+    //
 
-
-    // database Configs
+    // database Configs //Function Cohesion
     public static final String DB_NAME = "aims";
     public static final String DB_USERNAME = System.getenv("DB_USERNAME");
     public static final String DB_PASSWORD = System.getenv("DB_PASSWORD");
-    // static resource
+    //
+    // static resource //Function Cohesion
     public static final String IMAGE_PATH = "assets/images";
     public static final String INVOICE_SCREEN_PATH = "/views/fxml/invoice.fxml";
     public static final String INVOICE_MEDIA_SCREEN_PATH = "/views/fxml/media_invoice.fxml";
     public static final String PAYMENT_SCREEN_PATH = "/views/fxml/payment.fxml";
+    //
     public static final String RESULT_SCREEN_PATH = "/views/fxml/result.fxml";
     public static final String SPLASH_SCREEN_PATH = "/views/fxml/splash.fxml";
     public static final String CART_SCREEN_PATH = "/views/fxml/cart.fxml";
@@ -33,6 +35,7 @@ public class Configs {
     public static final String HOME_MEDIA_PATH = "/views/fxml/media_home.fxml";
     public static final String POPUP_PATH = "/views/fxml/popup.fxml";
     public static final String DELIVERY_METHODS_PATH = "/views/fxml/delivery_methods_form.fxml";
+    //Function Cohesion
     public static final int PLACE_RUSH_ORDER = 1;
     public static final int PALCE_ORDER = 2;
     public static String CURRENCY = "VND";
@@ -47,3 +50,4 @@ public class Configs {
             "Tây Ninh", "Hồ Chí Minh", "An Giang", "Bạc Liêu", "Bến Tre", "Cà Mau", "Đồng Tháp", "Hậu Giang",
             "Kiên Giang", "Long An", "Sóc Trăng", "Tiền Giang", "Trà Vinh", "Vĩnh Long", "Cần Thơ"};
 }
+//
