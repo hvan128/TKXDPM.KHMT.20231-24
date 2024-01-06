@@ -11,11 +11,23 @@
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="788.0"
             prefWidth="1326.0" xmlns="http://javafx.com/javafx/11.0.1">
     <children>
-    	<Label layoutX="79.0" layoutY="17.0" text="Login"  />
-        <Label layoutX="39.0" layoutY="47.0" text="Username:" />
-        <Label layoutX="39.0" layoutY="94.0" text="Password:" />
-        <TextField fx:id="usernameField" layoutX="120.0" layoutY="43.0" promptText="Enter your username" />
-        <PasswordField fx:id="passwordField" layoutX="120.0" layoutY="90.0" promptText="Enter your password" />
-        <Button layoutX="120.0" layoutY="136.0" mnemonicParsing="false" onAction="#loginAction"  text="Login" />
+    	<Label layoutX="630.0" layoutY="250.0" text="Login">
+    		<font>
+        		<Font name="System Bold" size="20.0" />
+    		</font>
+		</Label>
+        <Label layoutX="519.0" layoutY="298.0" text="Username:">
+    		<font>
+        		<Font size="16.0" />
+    		</font>
+		</Label>
+        <Label layoutX="519.0" layoutY="347.0" text="Password:" >
+            <font>
+        		<Font size="16.0" />
+    		</font>
+    	</Label>
+        <TextField fx:id="usernameField" layoutX="600.0" layoutY="300.0" promptText="Enter your username" />
+        <PasswordField fx:id="passwordField" layoutX="600.0" layoutY="347.0" promptText="Enter your password" />
+        <Button layoutX="600.0" layoutY="393.0" mnemonicParsing="false" onAction="#loginAction"  text="Login" />
     </children>
 </AnchorPane>

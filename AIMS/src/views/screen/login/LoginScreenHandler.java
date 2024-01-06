@@ -53,6 +53,10 @@ public class LoginScreenHandler extends BaseScreenHandler {
             // Correct login, navigate to home page
         	homeScreenHandler.show();
         }  
+//        if (username.equals("tuan") && password.equals("1234")) {
+//            // Correct login, navigate to home page
+//        	homeScreenHandler.show();
+//        }  
         else {
             // Incorrect login, show alert
         	showAlert("Notification", "Login Failed", "Please check your username and password.");

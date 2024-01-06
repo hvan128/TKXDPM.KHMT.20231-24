@@ -117,6 +117,7 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
                 LOGGER.info("User clicked to login");
                 loginScreen = new LoginScreenHandler(this.stage, Configs.LOGIN_SCREEN_PATH);
                 loginScreen.setHomeScreenHandler(this);
+                loginScreen.setScreenTitle("Login Screen");
             } catch (IOException  e1) {
                 throw new ViewCartException(Arrays.toString(e1.getStackTrace()).replaceAll(", ", "\n"));
             }
