@@ -121,6 +121,7 @@ public class CartScreenHandler extends BaseScreenHandler {
 			invoiceScreenHandler.setHomeScreenHandler(homeScreenHandler);
 			invoiceScreenHandler.setScreenTitle("Invoice Screen");
 			invoiceScreenHandler.setBController(new PlaceOrderController());
+			invoiceScreenHandler.setManagementScreenHandler(managementScreenHandler);
 			
 			invoiceScreenHandler.show();
 
