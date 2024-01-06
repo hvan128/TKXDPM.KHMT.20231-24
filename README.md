@@ -9,23 +9,23 @@
 | Trần Anh Tuấn | Member      |
 
 ## Folder Structure
-# AIMS
+### AIMS
 - Project for weekly exercise
-# AIMS-24
+### AIMS-24
 - Main Capstone Project
-# Data modeling
+### Data modeling
 - Er diagram
 - Database design
-# Design
+### Design
 - UI Specification
 - Interface design
-# Software Requirement Specification
+### Software Requirement Specification
 - Activity Diagram
 - Use case Diagram
 - Use case Specification
-# Unit Test
+### Unit Test
 - Test Plan
-# Use case Analysis
+### Use case Analysis
 - Class Analysis Diagram 
 - Interaction Diagram
 
