@@ -166,6 +166,7 @@ public class Book extends Media {
 
     /**
      * Functional Cohesion
+     *
      */
     @Override
     public Media getMediaById(int id) throws SQLException {
