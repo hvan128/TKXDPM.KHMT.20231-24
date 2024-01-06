@@ -26,6 +26,7 @@ public class CartMedia {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public Media getMedia() {
         return this.media;
@@ -34,6 +35,7 @@ public class CartMedia {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public void setMedia(Media media) {
         this.media = media;
@@ -42,6 +44,7 @@ public class CartMedia {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public int getQuantity() {
         return this.quantity;
@@ -50,6 +53,7 @@ public class CartMedia {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public void setQuantity(int quantity) {
         this.quantity = quantity;
@@ -58,6 +62,7 @@ public class CartMedia {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public int getPrice() {
         return this.price;
@@ -66,6 +71,7 @@ public class CartMedia {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     public void setPrice(int price) {
         this.price = price;
@@ -74,6 +80,7 @@ public class CartMedia {
 
     /**
      * Data Coupling
+     * Functional Cohesion
      */
     @Override
     public String toString() {

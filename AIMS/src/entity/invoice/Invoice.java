@@ -23,6 +23,7 @@ public class Invoice {
 
     /**
      * Data Coupling
+     *
      */
     public Order getOrder() {
         return order;
