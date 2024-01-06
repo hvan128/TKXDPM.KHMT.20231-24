@@ -165,7 +165,7 @@ public class Book extends Media {
 
 
     /**
-     * Content coupling
+     * Functional Cohesion
      *
      */
     @Override
@@ -205,7 +205,8 @@ public class Book extends Media {
 
 
     /**
-     * Data Coupling
+     * Content Coupling
+     * Coincidental Cohesion
      */
     @Override
     public List getAllMedia() {

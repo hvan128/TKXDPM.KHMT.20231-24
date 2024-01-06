@@ -32,6 +32,12 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
+/**
+ * SOLID: Đảm bảo SOLID
+ * quản lý màn hình chính của ứng dụng, lớp có các phần phụ thuộc vào HomeController, ViewCartController
+ */
+
+
 public class HomeScreenHandler extends BaseScreenHandler implements Initializable {
     /*
      * Functional cohesion
@@ -63,6 +69,11 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
     private SplitMenuButton splitMenuBtnSearch;
 
     private List homeItems;
+
+    /**
+     * SOLID: Đảm bảo SOLID
+     * Có thể xem xét numMediaCartLabel trong HomeScreenHandler sang Cart
+     */
 
     public HomeScreenHandler(Stage stage, String screenPath) throws IOException {
         super(stage, screenPath);

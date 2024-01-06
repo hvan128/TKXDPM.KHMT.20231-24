@@ -26,6 +26,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
+/**
+ * SOLID: Đảm bảo SOLID
+ * CartScreenHandler đảm bảo thực hiện 1 nhiệm vụ quản lí giỏ hàng
+ */
+
 public class CartScreenHandler extends BaseScreenHandler {
 
     private static Logger LOGGER = Utils.getLogger(CartScreenHandler.class.getName());
@@ -51,9 +56,7 @@ public class CartScreenHandler extends BaseScreenHandler {
     private Button btnPlaceOrder;
 
     public CartScreenHandler(Stage stage, String screenPath) throws IOException {
-    /*
-     * Functional cohesion 
-     */
+
         super(stage, screenPath);
 
         // fix relative image path caused by fxml

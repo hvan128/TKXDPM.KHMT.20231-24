@@ -12,6 +12,10 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.logging.Logger;
+/**
+ * SOLID:
+ * Việc chia ra các hàm trong class này đã đúng về nguyên tắc SOLID
+ */
 
 /**
  * This class controls the flow of place order usecase in our AIMS project

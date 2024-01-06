@@ -40,6 +40,10 @@ public class MediaHandler extends FXMLScreenHandler {
     private Media media;
     private HomeScreenHandler home;
 
+    /**
+     * SOLID: Đảm bảo SOLID
+     */
+
     public MediaHandler(String screenPath, Media media, HomeScreenHandler home) throws SQLException, IOException {
         super(screenPath);
         this.media = media;
@@ -84,6 +88,7 @@ public class MediaHandler extends FXMLScreenHandler {
     /**
      * @return Media
      */
+    //Functional cohesion
     public Media getMedia() {
         return media;
     }

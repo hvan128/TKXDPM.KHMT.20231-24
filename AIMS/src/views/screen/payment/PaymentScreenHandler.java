@@ -18,6 +18,10 @@ import java.net.URISyntaxException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * SOLID: Đảm bảo SOLID
+ */
+
 public class PaymentScreenHandler extends BaseScreenHandler {
 
     /*
@@ -28,7 +32,7 @@ public class PaymentScreenHandler extends BaseScreenHandler {
     private Label pageTitle;
     @FXML
     private VBox vBox;
-
+    
     public PaymentScreenHandler(Stage stage, String screenPath, Invoice invoice, String paymentUrl) throws IOException {
         super(stage, screenPath);
         this.invoice = invoice;

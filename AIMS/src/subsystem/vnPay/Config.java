@@ -13,6 +13,11 @@ import java.util.regex.Pattern;
 /**
  * @author CTT VNPAY
  */
+
+/**
+ * SOLID: Đảm bảo SOLID
+ */
+
 public class Config {
 
     private static final Pattern pattern = Pattern.compile("\\{\"IP\":\"(?<ip>.*)\"\\}");

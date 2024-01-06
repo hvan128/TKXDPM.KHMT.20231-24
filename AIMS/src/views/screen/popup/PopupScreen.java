@@ -13,6 +13,11 @@ import views.screen.BaseScreenHandler;
 import java.io.IOException;
 
 
+/**
+ * SOLID: Đảm bảo SOLID
+ * PopupScreen đảm bảo thực hiện 1 nhiệm vụ hiển thị popup
+ */
+
 public class PopupScreen extends BaseScreenHandler {
 
     /*
@@ -79,6 +84,7 @@ public class PopupScreen extends BaseScreenHandler {
     /**
      * @param path
      */
+    //Functional cohesion
     public void setImage(String path) {
         super.setImage(tickicon, path);
     }
@@ -87,6 +93,7 @@ public class PopupScreen extends BaseScreenHandler {
     /**
      * @param autoclose
      */
+    //Functional cohesion
     public void show(Boolean autoclose) {
         super.show();
         if (autoclose) close(0.8);
@@ -96,6 +103,7 @@ public class PopupScreen extends BaseScreenHandler {
     /**
      * @param time
      */
+    //Functional cohesion
     public void show(double time) {
         super.show();
         close(time);
@@ -105,6 +113,7 @@ public class PopupScreen extends BaseScreenHandler {
     /**
      * @param time
      */
+    //Functional cohesion
     public void close(double time) {
         PauseTransition delay = new PauseTransition(Duration.seconds(time));
         delay.setOnFinished(event -> stage.close());

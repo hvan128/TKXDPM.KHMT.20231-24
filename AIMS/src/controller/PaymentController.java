@@ -9,6 +9,10 @@ import subsystem.VnPaySubsystem;
 
 import java.util.Hashtable;
 import java.util.Map;
+/**
+ * SOLID:
+ * Việc chia ra các hàm trong class này đã đúng về nguyên tắc SOLID
+ */
 
 /**
  * This {@code PaymentController} class control the flow of the payment process

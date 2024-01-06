@@ -1,5 +1,10 @@
 package entity.user;
 
+/**
+ * Update coupling - cohesion:
+ * Coupling - Cohesion thấp do sử dụng getter/setter cho từng thuộc tính
+ */
+
 public class User {
 
     private int id;
@@ -44,7 +49,7 @@ public class User {
     /**
      * Data Coupling
      */
-    public void setusername(String name) {
+    public void setUsername(String name) {
         this.name = name;
     }
 
