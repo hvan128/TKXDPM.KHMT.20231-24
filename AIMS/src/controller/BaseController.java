@@ -3,6 +3,7 @@ package controller;
 import entity.cart.Cart;
 import entity.cart.CartMedia;
 import entity.media.Media;
+import entity.order.Order;
 
 import java.util.List;
 
@@ -33,4 +34,8 @@ public class BaseController {
     public List getListCartMedia() {
         return Cart.getCart().getListMedia();
     }
+
+//    public List getListOrderMedia() {
+//        return Order.get.getListMedia();
+//    }
 }

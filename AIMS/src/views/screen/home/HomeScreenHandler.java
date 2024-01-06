@@ -2,7 +2,6 @@ package views.screen.home;
 
 import common.exception.ViewCartException;
 import controller.HomeController;
-import controller.ManagementController;
 import controller.ViewCartController;
 import entity.cart.Cart;
 import entity.media.Media;
@@ -23,6 +22,7 @@ import utils.Utils;
 import views.screen.BaseScreenHandler;
 import views.screen.cart.CartScreenHandler;
 import views.screen.management.ManagementScreenHandler;
+import views.screen.order.OrderScreenHandler;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,6 +46,8 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
 
     @FXML
     private ImageView cartImage;
+    @FXML
+    private ImageView orderImage;
 
     @FXML
     private VBox vboxMedia1;
@@ -114,7 +116,18 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
         aimsImage.setOnMouseClicked(e -> {
             addMediaHome(this.homeItems);
         });
-
+        orderImage.setOnMouseClicked(e -> {
+            OrderScreenHandler orderScreen;
+            try {
+                LOGGER.info("User clicked to view cart");
+                orderScreen = new OrderScreenHandler(this.stage, Configs.ORDER_SCREEN_PATH);
+                orderScreen.setHomeScreenHandler(this);
+                orderScreen.setBController(new ViewCartController());
+                orderScreen.requestToViewCart(this);
+            } catch (IOException | SQLException e1) {
+                throw new ViewCartException(Arrays.toString(e1.getStackTrace()).replaceAll(", ", "\n"));
+            }
+        });
         cartImage.setOnMouseClicked(e -> {
             CartScreenHandler cartScreen;
             try {
@@ -158,6 +171,10 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
         File file3 = new File(Configs.IMAGE_PATH + "/media_manager.png");
         Image img3 = new Image(file3.toURI().toString());
         managerImage.setImage(img3);
+
+        File file4 = new File(Configs.IMAGE_PATH + "/order.png");
+        Image img4 = new Image(file4.toURI().toString());
+        orderImage.setImage(img4);
 
     }
 

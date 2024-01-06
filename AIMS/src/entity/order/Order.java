@@ -1,16 +1,12 @@
 package entity.order;
 
 import entity.db.AIMSDB;
-import entity.media.Media;
+import entity.invoice.Invoice;
 import entity.shipping.Shipment;
 import utils.Configs;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class Order {
@@ -22,6 +18,8 @@ public class Order {
     private String name;
     private String province;
     private String instruction;
+    private Invoice invoice;
+    private String status;
 
     public String getInstruction() {
         return instruction;
@@ -37,12 +35,28 @@ public class Order {
         return lstOrderMedia;
     }
 
+    public void setInvoice(Invoice invoice) {
+        this.invoice = invoice;
+    }
+
+    public Invoice getInvoice() {
+        return invoice;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
     public void setLstOrderMedia(List<OrderMedia> lstOrderMedia) {
         this.lstOrderMedia = lstOrderMedia;
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getStatus() {
+        return status;
     }
 
     public void setName(String name) {
@@ -92,7 +106,7 @@ public class Order {
         this.lstOrderMedia = lstOrderMedia;
     }
 
-    public void createOrderEntity(){
+    public void createOrderEntity() {
         try {
             Statement stm = AIMSDB.getConnection().createStatement();
         } catch (SQLException e) {
@@ -130,7 +144,7 @@ public class Order {
                 preparedStatement2.setString(3, shipment.getDeliveryTime());
                 preparedStatement2.setString(4, shipment.getShipmentDetail());
                 preparedStatement2.setInt(5, id);
-              preparedStatement2.executeUpdate();
+                preparedStatement2.executeUpdate();
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -161,6 +175,37 @@ public class Order {
         return this.lstOrderMedia;
     }
 
+//    public static List<Order> getAllOrders() throws SQLException {
+//
+//        List<Order> orders = new ArrayList<>();
+//
+//        String sql = "SELECT * FROM `Order`";
+//
+//        Connection connection = AIMSDB.getConnection();
+//        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+//        ResultSet resultSet = preparedStatement.executeQuery();
+//
+//        while (resultSet.next()) {
+//            Order newOrderDto = new Order(
+//                    resultSet.getInt("id"),
+//                    resultSet.getString("email"),
+//                    resultSet.getString("address"),
+//                    resultSet.getString("phone"),
+//                    resultSet.getInt("userID"),
+//                    resultSet.getInt("shipping_fee"),
+//                    resultSet.getString("status"),
+//                    resultSet.getString("rush_shipping_time"),
+//                    resultSet.getString("province"),
+//                    resultSet.getString("shipping_instruction"),
+//                    resultSet.getString("rush_shipping_instruction"),
+//                    resultSet.getInt("is_rush_shipping"));
+//
+//            Order order = new Order(newOrderDto);
+//            orders.add(order);
+//        }
+//
+//        return orders;
+//    }
 
     /**
      * @param lstOrderMedia

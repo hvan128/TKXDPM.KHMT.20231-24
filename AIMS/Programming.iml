@@ -13,4 +13,7 @@
     <orderEntry type="library" name="lib2" level="project" />
     <orderEntry type="library" name="lib3" level="project" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="a6adde09-1146-41e0-a21f-7b3eb4379f7b" />
+  </component>
 </module>

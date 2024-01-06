@@ -56,6 +56,16 @@
                         </Pane>
                     </children>
                 </HBox>
+                <Pane prefHeight="102.0" prefWidth="123.0" >
+                    <children>
+                        <ImageView fx:id="orderImage" fitHeight="75.0" fitWidth="64.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                            <image>
+                                <!--                                        <Image url="@../../../../../../../../../../mnt/nguyenlm/DriveD/Documents/UNIVERSITY/PERSONAL/PROJECT/Java/TA-TKXDPM/AIMS/assets/images/order.png"/>-->
+                            </image>
+                        </ImageView>
+                        <Label fx:id="numMediaInOrder" layoutX="24.0" layoutY="11.0" prefHeight="16.0" prefWidth="64.0" text="0 media" textFill="#5091e6" />
+                    </children>
+                </Pane>
                 <VBox prefHeight="102.0" prefWidth="100.0">
                     <children>
                         <Pane prefHeight="200.0" prefWidth="200.0">

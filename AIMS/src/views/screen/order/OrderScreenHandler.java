@@ -1,5 +1,3 @@
-//package views.screen.order;
-//
 //import controller.CancelOrderController;
 //import entity.order.Order;
 //import javafx.fxml.FXML;
@@ -132,49 +130,13 @@ public class OrderScreenHandler extends BaseScreenHandler {
             homeScreenHandler.show();
         });
 
-        // on mouse clicked, we start processing place order usecase
-        btnPlaceOrder.setOnMouseClicked(e -> {
-
-            try {
-                requestOrder();
-            } catch (SQLException | IOException exp) {
-
-                exp.printStackTrace();
-                throw new PlaceOrderException(Arrays.toString(exp.getStackTrace()).replaceAll(", ", "\n"));
-            }
-
-        });
     }
 
-
-    /**
-     * @return Label
-     */
-    public Label getLabelAmount() {
-        return labelAmount;
-    }
-
-
-    /**
-     * @return Label
-     */
-    public Label getLabelSubtotal() {
-        return labelSubtotal;
-    }
-
-
-    /**
-     * @return ViewCartController
-     */
     public ViewCartController getBController() {
         return (ViewCartController) super.getBController();
     }
 
 
-    /**
-     * @param prevScreen
-     * @throws SQLException
-     */
     public void requestToViewCart(BaseScreenHandler prevScreen) throws SQLException {
         setPreviousScreen(prevScreen);
         setScreenTitle("Cart Screen");
@@ -183,41 +145,6 @@ public class OrderScreenHandler extends BaseScreenHandler {
         show();
     }
 
-
-    /**
-     * @throws SQLException
-     * @throws IOException
-     */
-    public void requestOrder() throws SQLException, IOException {
-        try {
-            // create placeOrderController and process the order
-            var placeOrderController = new PlaceOrderController();
-            if (placeOrderController.getListCartMedia().size() == 0) {
-                PopupScreen.error("You don't have anything to place");
-                return;
-            }
-
-            placeOrderController.placeOrder();
-
-            // display available media
-//            displayCartWithMediaAvailability();
-
-            // create order
-            Order order = placeOrderController.createOrder();
-
-            // display shipping form
-            ShippingScreenHandler ShippingScreenHandler = new ShippingScreenHandler(this.stage, Configs.SHIPPING_SCREEN_PATH, order);
-            ShippingScreenHandler.setPreviousScreen(this);
-            ShippingScreenHandler.setHomeScreenHandler(homeScreenHandler);
-            ShippingScreenHandler.setScreenTitle("Shipping Screen");
-            ShippingScreenHandler.setBController(placeOrderController);
-            ShippingScreenHandler.show();
-
-        } catch (MediaNotAvailableException e) {
-            // if some media are not available then display cart and break usecase Place Order
-            displayCartWithMediaAvailability();
-        }
-    }
 
 
     /**
@@ -253,7 +180,7 @@ public class OrderScreenHandler extends BaseScreenHandler {
 
                 // display the attribute of vboxOrder media
                 CartMedia cartMedia = (CartMedia) cm;
-                MediaHandler mediaCartScreen = new MediaHandler(Configs.CART_MEDIA_PATH, this);
+                MediaHandler mediaCartScreen = new MediaHandler(Configs.ORDER_MEDIA_PATH, this);
                 mediaCartScreen.setCartMedia(cartMedia);
 
                 // add spinner
