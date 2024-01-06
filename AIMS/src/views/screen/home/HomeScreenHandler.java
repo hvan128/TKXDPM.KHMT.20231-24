@@ -110,8 +110,6 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
         }
 
         aimsImage.setOnMouseClicked(e -> {
-//            addMediaHome(this.homeItems);
-//            System.out.print("Ckicked aims");
         	LoginScreenHandler loginScreen;
         	try {
                 LOGGER.info("User clicked to login");
