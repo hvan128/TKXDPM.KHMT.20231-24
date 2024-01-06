@@ -27,6 +27,7 @@ import utils.Utils;
 import views.screen.BaseScreenHandler;
 import views.screen.admin.AdminScreenHandler;
 import views.screen.cart.CartScreenHandler;
+import views.screen.login.LoginScreenHandler;
 import views.screen.management.ManagementScreenHandler;
 
 
@@ -98,7 +99,15 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
         }
         
         aimsImage.setOnMouseClicked(e -> {
-            addMediaHome(this.homeItems);
+        	LoginScreenHandler loginScreen;
+        	try {
+                LOGGER.info("User clicked to login");
+                loginScreen = new LoginScreenHandler(this.stage, Configs.LOGIN_SCREEN_PATH);
+                loginScreen.setHomeScreenHandler(this);
+                loginScreen.setScreenTitle("Login Screen");
+            } catch (IOException  e1) {
+                throw new ViewCartException(Arrays.toString(e1.getStackTrace()).replaceAll(", ", "\n"));
+            }
         });
 //        managerImage.setOnMouseClicked(e -> {
 //            ManagementScreenHandler managementScreenHandler;
@@ -129,13 +138,14 @@ cartScreen = new CartScreenHandler(this.stage, Configs.CART_SCREEN_PATH);
         });
         
         adminImage.setOnMouseClicked(e -> {
-        	ManagementScreenHandler managementScreenHandler;
-            try {
-                LOGGER.info("User clicked to media management");
-                managementScreenHandler = new ManagementScreenHandler(this.stage, Configs.MANAGEMENT_PATH);
-                managementScreenHandler.openMediaManage();
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
+        	LoginScreenHandler loginScreen;
+        	try {
+                LOGGER.info("User clicked to login");
+                loginScreen = new LoginScreenHandler(this.stage, Configs.LOGIN_SCREEN_PATH);
+                loginScreen.setHomeScreenHandler(this);
+                loginScreen.setScreenTitle("Login Screen");
+            } catch (IOException  e1) {
+                throw new ViewCartException(Arrays.toString(e1.getStackTrace()).replaceAll(", ", "\n"));
             }
         });
         
