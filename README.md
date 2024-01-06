@@ -8,6 +8,27 @@
 | Tô Duy Tường  | Member      |
 | Trần Anh Tuấn | Member      |
 
+## Folder Structure
+# AIMS
+- Project for weekly exercise
+# AIMS-24
+- Main Capstone Project
+# Data modeling
+- Er diagram
+- Database design
+# Design
+- UI Specification
+- Interface design
+# Software Requirement Specification
+- Activity Diagram
+- Use case Diagram
+- Use case Specification
+# Unit Test
+- Test Plan
+# Use case Analysis
+- Class Analysis Diagram 
+- Interaction Diagram
+
 ## Report Content
 
 <details>
@@ -306,103 +327,6 @@
     - Tuy nhiên, mức độ tuân thủ SOLID trong đoạn mã này phụ thuộc vào yêu cầu cụ thể của dự án và cách bạn muốn tổ chức mã nguồn của mình.
     - Bằng cách này, mỗi phương thức sẽ có trách nhiệm đơn lẻ và dễ bảo trì hơn. Tuy nhiên, việc áp dụng SOLID không chỉ là việc tách mã nguồn thành các phương thức nhỏ, mà còn là việc đảm bảo các class và module được thiết kế sao cho chúng tuân theo các nguyên tắc SOLID. Điều này có thể đòi hỏi sự tái cấu trúc và phân chia code thành các class riêng biệt nếu cần thiết.
     - Ví dụ, bạn có thể tạo các lớp riêng biệt để quản lý việc tạo kết nối (ConnectionManager), gửi yêu cầu và nhận phản hồi (RequestSender), và cập nhật phương thức HTTP (HttpMethodUpdater). Bằng cách này, mỗi lớp sẽ có trách nhiệm đơn lẻ và dễ bảo trì hơn.
-</details>
-
-</details>
-
----
-
-<details>
-  <summary>W16: 25/12/2023~1/31/2023 </summary>
-<br>
-<details>
-<summary>Ngô Hải Văn</summary>
-<br>
-
-- Assigned tasks:
-
-  - Task 1
-  - Task 2
-  - ...
-
-- Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-  - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
-
-</details>
-
-<details>
-<summary>Ong Thế Tùng</summary>
-<br>
-
-- Assigned tasks:
-
-  - Task 1
-  - Task 2
-  - ...
-
-- Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-  - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
-
-</details>
-
-<details>
-<summary>Tô Duy Tường</summary>
-<br>
-
-- Assigned tasks:
-
-  - Task 1
-  - Task 2
-  - ...
-
-- Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-  - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
-
-</details>
-
-<details>
-<summary>Vũ Anh Tuấn</summary>
-<br>
-
-- Assigned tasks:
-
-  - Task 1
-  - Task 2
-  - ...
-
-- Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-  - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
-
-</details>
-
-<details>
-<summary>Trần Anh Tuấn</summary>
-<br>
-
-- Assigned tasks:
-
-  - Task 1
-  - Task 2
-  - ...
-
-- Implementation details:
-  - Pull Request(s): [Attach links to your pull requests here. You can attach multiple pull requests]()
-  - Specific implementation details:
-    - Describe specific in detail what you did last week
-    - You can attach images if you want
-
 </details>
 
 </details>
