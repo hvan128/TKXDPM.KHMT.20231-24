@@ -16,6 +16,21 @@ import java.util.logging.Logger;
  *
  * @author nguyenlm
  */
+
+/**
+ * SOLID:
+ * Đảm bảo tốt nguyên tắc OCP: Phương thức `getMediaById` được kế thừa bởi các lớp con, dễ dang cho
+ * việc mở rộng mà không cần chỉnh sửa trong lớp này
+ *
+ * Đảm bảo nguyên tắc SRP: Việc tách lớp Media thành các lớp con Book, CD, DVD để mỗi lớp con thực hiện
+ * đúng một trách nhiệm duy nhất liên quan đến sản phẩm của mình
+ *
+ * Việc tách CartMedia, OrderMedia với Media đảm bảo SRP: mỗi lớp thực hiện 1 chức năng
+ * CartMedia chịu trách nhiệm với các sản phẩm trong Cart (chỉ thể hiện các thông tin cần thiết)
+ * Media quản lý thông tin của sản phẩm nói chung, bao gồm Book, CD, DVD
+ */
+
+
 public class Media {
 
     protected static boolean isSupportedPlaceRushOrder = new Random().nextBoolean();
@@ -46,15 +61,14 @@ public class Media {
     }
 
     /**
-     * @return boolean
+     * Data coupling
      */
     public static boolean getIsSupportedPlaceRushOrder() {
         return Media.isSupportedPlaceRushOrder;
     }
 
     /**
-     * @return int
-     * @throws SQLException
+     * Data coupling
      */
     public int getQuantity() throws SQLException {
         int updated_quantity = getMediaById(id).quantity;
@@ -63,8 +77,7 @@ public class Media {
     }
 
     /**
-     * @param quantity
-     * @return Media
+     * Data coupling
      */
     public Media setQuantity(int quantity) {
         this.quantity = quantity;
@@ -72,9 +85,8 @@ public class Media {
     }
 
     /**
-     * @param id
-     * @return Media
-     * @throws SQLException
+     * Data coupling
+     * Functional Cohesion
      */
     public Media getMediaById(int id) throws SQLException {
         String sql = "SELECT * FROM Media ;";
@@ -95,8 +107,8 @@ public class Media {
     }
 
     /**
-     * @return List
-     * @throws SQLException
+     * Data Coupling
+     * Functional Cohesion
      */
     public List getAllMedia() throws SQLException {
         Statement stm = AIMSDB.getConnection().createStatement();
@@ -117,11 +129,8 @@ public class Media {
     }
 
     /**
-     * @param tbname
-     * @param id
-     * @param field
-     * @param value
-     * @throws SQLException
+     * Data Coupling
+     * Logic Cohesion
      */
     public void updateMediaFieldById(String tbname, int id, String field, Object value) throws SQLException {
         Statement stm = AIMSDB.getConnection().createStatement();
@@ -134,7 +143,7 @@ public class Media {
     }
 
     /**
-     * @return int
+     * Data Coupling
      */
     // getter and setter
     public int getId() {
@@ -142,8 +151,7 @@ public class Media {
     }
 
     /**
-     * @param id
-     * @return Media
+     * Data Coupling
      */
     private Media setId(int id) {
         this.id = id;
@@ -151,15 +159,14 @@ public class Media {
     }
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getTitle() {
         return this.title;
     }
 
     /**
-     * @param title
-     * @return Media
+     * Data Coupling
      */
     public Media setTitle(String title) {
         this.title = title;
@@ -167,15 +174,14 @@ public class Media {
     }
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getCategory() {
         return this.category;
     }
 
     /**
-     * @param category
-     * @return Media
+     * Data Coupling
      */
     public Media setCategory(String category) {
         this.category = category;
@@ -183,15 +189,14 @@ public class Media {
     }
 
     /**
-     * @return int
+     * Data Coupling
      */
     public int getPrice() {
         return this.price;
     }
 
     /**
-     * @param price
-     * @return Media
+     * Data coupling
      */
     public Media setPrice(int price) {
         this.price = price;
@@ -199,15 +204,14 @@ public class Media {
     }
 
     /**
-     * @return String
+     * data coupling
      */
     public String getImageURL() {
         return this.imageURL;
     }
 
     /**
-     * @param url
-     * @return Media
+     * Data Coupling
      */
     public Media setMediaURL(String url) {
         this.imageURL = url;
@@ -215,15 +219,14 @@ public class Media {
     }
 
     /**
-     * @return String
+     * Data Coupling
      */
     public String getType() {
         return this.type;
     }
 
     /**
-     * @param type
-     * @return Media
+     * Data Coupling
      */
     public Media setType(String type) {
         this.type = type;
@@ -231,7 +234,7 @@ public class Media {
     }
 
     /**
-     * @return String
+     * Data Coupling
      */
     @Override
     public String toString() {

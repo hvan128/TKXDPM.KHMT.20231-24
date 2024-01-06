@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 public class Utils {
 
     public static DateFormat DATE_FORMATER = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-    private static Logger LOGGER = getLogger(Utils.class.getName());
+    private static Logger LOGGER = getLogger(Utils.class.getName()); 
 
     static {
         System.setProperty("java.util.logging.SimpleFormatter.format", "[%4$-4s] [%1$tF %1$tT] [%2$-7s] %5$s %n");
@@ -27,6 +27,14 @@ public class Utils {
      * @param className
      * @return Logger
      */
+    //Function cohesion
+
+    /*
+     * Solid
+     * Phương thức này chỉ thực hiện một nhiệm vụ duy nhất là trả về một đối tượng Logger. 
+     * Nó tận dụng Java Logging API để cấu hình và tạo Logger. 
+     * Điều này phản ánh SRP vì nó có trách nhiệm duy nhất là cung cấp một Logger.
+     */
     public static Logger getLogger(String className) {
         return Logger.getLogger(className);
     }
@@ -35,6 +43,13 @@ public class Utils {
     /**
      * @param num
      * @return String
+     */
+    //Function cohesion
+
+    /*
+     * Solid
+     * Phương thức này cũng chỉ thực hiện một nhiệm vụ duy nhất là định dạng một số nguyên theo định dạng tiền tệ.
+     *  Nó không thực hiện nhiều công việc khác, chỉ làm một công việc duy nhất.
      */
     public static String getCurrencyFormat(int num) {
         Locale vietname = new Locale("vi", "VN");
@@ -47,6 +62,12 @@ public class Utils {
      *
      * @return the current time as {@link java.lang.String String}.
      * @author hieudm
+     */
+    //Function cohesion
+
+    /*
+     * Solid
+     * Phương thức này cũng chỉ thực hiện một nhiệm vụ duy nhất là trả về thời gian hiện tại dưới dạng chuỗi được định dạng.
      */
     public static String getToday() {
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -61,6 +82,12 @@ public class Utils {
      * @param message - plain text as {@link java.lang.String String}.
      * @return cipher text as {@link java.lang.String String}.
      * @author hieudm vnpay
+     */
+    //Function cohesion
+
+    /*
+     * Solid 
+     * Phương thức này thực hiện việc mã hóa chuỗi đầu vào bằng thuật toán MD5. Nó không thực hiện nhiều nhiệm vụ khác, chỉ có trách nhiệm mã hóa.
      */
     public static String md5(String message) {
         String digest = null;

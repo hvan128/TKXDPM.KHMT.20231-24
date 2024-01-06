@@ -12,8 +12,14 @@ import views.screen.FXMLScreenHandler;
 import java.io.IOException;
 import java.sql.SQLException;
 
-public class MediaInvoiceScreenHandler extends FXMLScreenHandler {
+/**
+ * SOLID: Đảm bảo SOLID
+ */
 
+public class MediaInvoiceScreenHandler extends FXMLScreenHandler {
+    /*
+     * Functional cohesion
+     */
     @FXML
     private HBox hboxMedia;
 
@@ -49,6 +55,7 @@ public class MediaInvoiceScreenHandler extends FXMLScreenHandler {
      * @param orderMedia
      * @throws SQLException
      */
+    //Functional cohesion
     public void setOrderMedia(OrderMedia orderMedia) throws SQLException {
         this.orderMedia = orderMedia;
         setMediaInfo();
@@ -58,6 +65,7 @@ public class MediaInvoiceScreenHandler extends FXMLScreenHandler {
     /**
      * @throws SQLException
      */
+    //Functional cohesion
     public void setMediaInfo() throws SQLException {
         title.setText(orderMedia.getMedia().getTitle());
         price.setText(Utils.getCurrencyFormat(orderMedia.getPrice()));

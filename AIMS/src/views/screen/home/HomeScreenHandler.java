@@ -32,8 +32,16 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
-public class HomeScreenHandler extends BaseScreenHandler implements Initializable {
+/**
+ * SOLID: Đảm bảo SOLID
+ * quản lý màn hình chính của ứng dụng, lớp có các phần phụ thuộc vào HomeController, ViewCartController
+ */
 
+
+public class HomeScreenHandler extends BaseScreenHandler implements Initializable {
+    /*
+     * Functional cohesion
+     */
     public static Logger LOGGER = Utils.getLogger(HomeScreenHandler.class.getName());
 
     @FXML
@@ -61,6 +69,11 @@ public class HomeScreenHandler extends BaseScreenHandler implements Initializabl
     private SplitMenuButton splitMenuBtnSearch;
 
     private List homeItems;
+
+    /**
+     * SOLID: Đảm bảo SOLID
+     * Có thể xem xét numMediaCartLabel trong HomeScreenHandler sang Cart
+     */
 
     public HomeScreenHandler(Stage stage, String screenPath) throws IOException {
         super(stage, screenPath);

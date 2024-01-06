@@ -4,16 +4,23 @@ import entity.shipping.Shipment;
 
 import java.util.HashMap;
 import java.util.logging.Logger;
+/**
+ * SOLID:
+ * Việc chia ra các hàm trong class này đã đúng về nguyên tắc SOLID
+ */
 
 /**
  * This class controls the flow of place rush order usecase in our AIMS project
  *
  * @author giangleee
  */
+//Coupling
+
 public class PlaceRushOrderController extends BaseController {
     /**
      * Just for logging purpose
      */
+    //Functional cohesion
     private static Logger LOGGER = utils.Utils.getLogger(PlaceRushOrderController.class.getName());
 
 
@@ -21,6 +28,7 @@ public class PlaceRushOrderController extends BaseController {
      * @param deliveryData
      * @param typeDelivery
      */
+    //Functional cohesion
     public static void validatePlaceRushOrderData(HashMap<String, String> deliveryData, int typeDelivery) {
         if (typeDelivery == utils.Configs.PLACE_RUSH_ORDER) {
             Shipment shipment = new Shipment(typeDelivery, deliveryData.get("deliveryInstruction"), deliveryData.get("shipmentDetail"), deliveryData.get("deliveryTime"));

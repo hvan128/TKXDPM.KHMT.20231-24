@@ -13,6 +13,8 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.logging.Logger;
 
+// Function Cohesion
+
 public class ApplicationProgrammingInterface {
 
     public static DateFormat DATE_FORMATER = new SimpleDateFormat("yyyyMMddHHmmss");
@@ -51,6 +53,16 @@ public class ApplicationProgrammingInterface {
      * @return HttpURLConnection
      * @throws IOException
      */
+    // Function Cohesion
+
+
+    /**Solid
+    Phương thức generateConnection: Phương thức này đang thực hiện nhiều công việc như thiết lập kết nối, đặt các thuộc tính của kết nối, 
+    và kiểm tra điều kiện để đặt Authorization. 
+    Có thể xem xét chia thành các phương thức nhỏ hơn để mỗi phương thức chỉ thực hiện một trách nhiệm cụ thể.
+
+     **/
+
     private static HttpURLConnection generateConnection(String url, String requestMethod, String token) throws IOException {
         final var conn = (HttpURLConnection) extracted(url).openConnection();
         conn.setDoInput(true);
@@ -71,6 +83,8 @@ public class ApplicationProgrammingInterface {
      * @return response in String type
      * @throws IOException when this exceptional condition occurs
      */
+
+    // Function Cohesion
     public static String post(String url, String data) throws IOException {
         allowMethods("PATCH");
         final String payload = data;
@@ -108,6 +122,12 @@ public class ApplicationProgrammingInterface {
     /**
      * @param methods
      */
+    // Function Cohesion 
+
+    /**Solid  
+     * Phương thức allowMethods: Phương thức này có nhiệm vụ thiết lập quyền truy cập các phương thức HTTP mới. 
+     * Có thể xem xét chia thành các phương thức nhỏ hơn để mỗi phương thức chỉ thực hiện một trách nhiệm cụ thể.
+    */
     private static void allowMethods(String... methods) {
         try {
             Field methodsField = HttpURLConnection.class.getDeclaredField("methods");

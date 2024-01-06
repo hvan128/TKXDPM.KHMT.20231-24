@@ -16,8 +16,14 @@ import views.screen.invoice.InvoiceScreenHandler;
 import java.io.IOException;
 import java.util.HashMap;
 
-public class DeliveryMethodsScreenHandler extends BaseScreenHandler {
+/**
+ * SOLID: Đảm bảo SOLID
+ */
 
+public class DeliveryMethodsScreenHandler extends BaseScreenHandler {
+    /*
+     * Functional cohesion
+     */
     private Order order;
 
     @FXML
@@ -167,6 +173,8 @@ public class DeliveryMethodsScreenHandler extends BaseScreenHandler {
     /**
      * @return PlaceOrderController
      */
+    //Functional cohesion
+
     public PlaceOrderController getBController() {
         return (PlaceOrderController) super.getBController();
     }

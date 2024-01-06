@@ -21,7 +21,9 @@ import java.sql.SQLException;
 import java.util.logging.Logger;
 
 public class MediaHandler extends FXMLScreenHandler {
-
+    /*
+     * Functional cohesion
+     */
     private static Logger LOGGER = Utils.getLogger(MediaHandler.class.getName());
     @FXML
     protected ImageView mediaImage;
@@ -37,6 +39,10 @@ public class MediaHandler extends FXMLScreenHandler {
     protected Button addToCartBtn;
     private Media media;
     private HomeScreenHandler home;
+
+    /**
+     * SOLID: Đảm bảo SOLID
+     */
 
     public MediaHandler(String screenPath, Media media, HomeScreenHandler home) throws SQLException, IOException {
         super(screenPath);
@@ -82,6 +88,7 @@ public class MediaHandler extends FXMLScreenHandler {
     /**
      * @return Media
      */
+    //Functional cohesion
     public Media getMedia() {
         return media;
     }

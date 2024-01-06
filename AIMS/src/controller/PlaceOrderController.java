@@ -12,17 +12,23 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.logging.Logger;
+/**
+ * SOLID:
+ * Việc chia ra các hàm trong class này đã đúng về nguyên tắc SOLID
+ */
 
 /**
  * This class controls the flow of place order usecase in our AIMS project
  *
  * @author nguyenlm
  */
+//Coupling
 public class PlaceOrderController extends BaseController {
 
     /**
      * Just for logging purpose
      */
+    //Functional cohesion
     private static Logger LOGGER = utils.Utils.getLogger(PlaceOrderController.class.getName());
 
     /**
@@ -31,6 +37,7 @@ public class PlaceOrderController extends BaseController {
      *
      * @throws SQLException
      */
+    //Functional cohesion
     public void placeOrder() throws SQLException {
         Cart.getCart().checkAvailabilityOfProduct();
     }
@@ -70,6 +77,7 @@ public class PlaceOrderController extends BaseController {
      * @throws InterruptedException
      * @throws IOException
      */
+    //Functional cohesion
     public void processDeliveryInfo(HashMap info) throws InterruptedException, IOException {
         LOGGER.info("Process Delivery Info");
         LOGGER.info(info.toString());
@@ -92,6 +100,7 @@ public class PlaceOrderController extends BaseController {
      * @param phoneNumber
      * @return boolean
      */
+    //Functional cohesion
     public boolean validatePhoneNumber(String phoneNumber) {
         // check the phoneNumber has 10 digits
         if (phoneNumber.length() != 10)
@@ -108,11 +117,7 @@ public class PlaceOrderController extends BaseController {
         return true;
     }
 
-
-    /**
-     * @param name
-     * @return boolean
-     */
+    //Functional cohesion
     public boolean validateName(String name) {
         // Check name is not null
         if (name == null)
@@ -125,12 +130,7 @@ public class PlaceOrderController extends BaseController {
             return false;
         return true;
     }
-
-
-    /**
-     * @param address
-     * @return boolean
-     */
+    //Functional cohesion
     public boolean validateAddress(String address) {
         // Check address is not null
         if (address == null)
@@ -144,12 +144,7 @@ public class PlaceOrderController extends BaseController {
         return true;
     }
 
-    /**
-     * This method calculates the shipping fees of order
-     *
-     * @param order
-     * @return shippingFee
-     */
+    //Functional cohesion
     public int calculateShippingFee(Order order) {
         Random rand = new Random();
         int fees = (int) (((rand.nextFloat() * 10) / 100) * order.getAmount());
@@ -157,13 +152,7 @@ public class PlaceOrderController extends BaseController {
         return fees;
     }
 
-    /**
-     * This method get product available place rush order media
-     *
-     * @param order
-     * @return media
-     * @throws SQLException
-     */
+    //Functional cohesion
     public Media getProductAvailablePlaceRush(Order order) throws SQLException {
         Media media = new Media();
         HashMap<String, String> deliveryInfo = order.getDeliveryInfo();
@@ -174,13 +163,7 @@ public class PlaceOrderController extends BaseController {
         }
         return media;
     }
-
-
-    /**
-     * @param province
-     * @param address
-     * @return boolean
-     */
+    //Functional cohesion
     public boolean validateAddressPlaceRushOrder(String province, String address) {
         if (!validateAddress(address))
             return false;
@@ -189,10 +172,7 @@ public class PlaceOrderController extends BaseController {
         return true;
     }
 
-
-    /**
-     * @return boolean
-     */
+    //Functional cohesion
     public boolean validateMediaPlaceRushorder() {
         if (Media.getIsSupportedPlaceRushOrder())
             return true;
