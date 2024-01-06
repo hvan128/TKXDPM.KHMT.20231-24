@@ -13,6 +13,10 @@ public class Shipment {
     private String deliveryTime;
 
     //constructor operation
+
+    /**
+     * Control Coupling
+     */
     public Shipment(int shipType, String deliveryInstruction, String shipmentDetail, String deliveryTime) {
         super();
         if (shipType == utils.Configs.PLACE_RUSH_ORDER) {
@@ -28,7 +32,7 @@ public class Shipment {
 
 
     /**
-     * @return String
+     * Data Coupling
      */
     //getter setter method
     public String getDeliveryInstruction() {
@@ -41,7 +45,7 @@ public class Shipment {
 
 
     /**
-     * @return Shipment
+     *
      */
     public Shipment createNewShipment() throws ExecutionControl.NotImplementedException {
         // TODO: implement later on

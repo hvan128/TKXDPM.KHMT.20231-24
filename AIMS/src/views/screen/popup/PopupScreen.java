@@ -15,6 +15,10 @@ import java.io.IOException;
 
 public class PopupScreen extends BaseScreenHandler {
 
+    /*
+     * Functional cohesion 
+     */
+
 
     @FXML
     ImageView tickicon;

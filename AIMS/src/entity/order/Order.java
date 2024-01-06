@@ -22,7 +22,7 @@ public class Order {
 
 
     /**
-     * @param om
+     * Data coupling
      */
     public void addOrderMedia(OrderMedia om) {
         this.lstOrderMedia.add(om);
@@ -30,7 +30,7 @@ public class Order {
 
 
     /**
-     * @param om
+     * Stamp coupling
      */
     public void removeOrderMedia(OrderMedia om) {
         this.lstOrderMedia.remove(om);
@@ -38,7 +38,7 @@ public class Order {
 
 
     /**
-     * @return List
+     * Data Coupling
      */
     public List getlstOrderMedia() {
         return this.lstOrderMedia;
@@ -46,28 +46,28 @@ public class Order {
 
 
     /**
-     * @param lstOrderMedia
+     * Data Coupling
      */
     public void setlstOrderMedia(List lstOrderMedia) {
         this.lstOrderMedia = lstOrderMedia;
     }
 
     /**
-     * @return int
+     * Data Coupling
      */
     public int getShippingFees() {
         return shippingFees;
     }
 
     /**
-     * @param shippingFees
+     * Data Coupling
      */
     public void setShippingFees(int shippingFees) {
         this.shippingFees = shippingFees;
     }
 
     /**
-     * @return HashMap
+     * Data Coupling
      */
     public HashMap getDeliveryInfo() {
         return deliveryInfo;
@@ -75,7 +75,7 @@ public class Order {
 
 
     /**
-     * @param deliveryInfo
+     * Data Coupling
      */
     public void setDeliveryInfo(HashMap deliveryInfo) {
         this.deliveryInfo = deliveryInfo;
@@ -83,7 +83,7 @@ public class Order {
 
 
     /**
-     * @return int
+     * Data Coupling
      */
     public int getAmount() {
         double amount = 0;

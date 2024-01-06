@@ -13,7 +13,9 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 public class MediaInvoiceScreenHandler extends FXMLScreenHandler {
-
+    /*
+     * Functional cohesion
+     */
     @FXML
     private HBox hboxMedia;
 
